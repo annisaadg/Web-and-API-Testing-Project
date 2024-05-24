@@ -84,4 +84,5 @@ public class DashboardPage {
     public boolean isCartIconDisplayed() {
         return driver.findElement(cartIcon).isDisplayed();
     }
+    
 }
