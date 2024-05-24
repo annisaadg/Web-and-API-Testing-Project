@@ -1,10 +1,10 @@
 package com.tubes.stepdefinition.swaglabs;
 
-import static org.junit.Assert.assertTrue;
-import org.openqa.selenium.WebDriver;
-
 import com.tubes.pages.DashboardPage;
 import com.tubes.utils.DriverManager;
+
+import static org.junit.Assert.assertTrue;
+import org.openqa.selenium.WebDriver;
 
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
