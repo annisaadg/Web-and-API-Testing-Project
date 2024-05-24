@@ -8,7 +8,6 @@ import com.tubes.pages.DashboardPage;
 import com.tubes.pages.LoginPage;
 import com.tubes.utils.DriverManager;
 
-
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
@@ -89,4 +88,5 @@ public class MenuStepDefinitions {
     public void closeBrowser() {
         DriverManager.quitDriver();
     }
+
 }
