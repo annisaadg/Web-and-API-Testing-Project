@@ -5,7 +5,6 @@ Feature: Dashboard
     And I am on the dashboard page
     Then I should see a list of items with name, description, image, price, and an "Add to cart" button
 
-  @focus
   Scenario: Verifikasi Tampilan Menuju Halaman Cart
     Given I have successfully logged in
     And I am on the dashboard page
