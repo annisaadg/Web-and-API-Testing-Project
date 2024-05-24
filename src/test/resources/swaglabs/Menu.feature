@@ -16,3 +16,4 @@ Feature: Menu
         And I have clicked the menu button
         When I click the "About" button
         Then I should be redirected to the Swag Labs website
+        
