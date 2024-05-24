@@ -22,3 +22,4 @@ Feature: User Login
         And I click the login button
         Then I should see the error message "Username and password do not match any user in this service !"
         And I should remain on the login page
+        
