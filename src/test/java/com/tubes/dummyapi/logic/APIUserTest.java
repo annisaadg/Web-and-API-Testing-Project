@@ -6,6 +6,8 @@ import com.tubes.dummyapi.helper.SetUpEndPoint;
 import com.tubes.dummyapi.logic.request.RequestAPIUserManagement;
 
 import io.restassured.response.Response;
+
+import org.json.JSONObject;
 import org.junit.Assert;
 
 import java.text.ParseException;
@@ -29,6 +31,16 @@ public class APIUserTest {
         System.out.println(res.getBody().asString()); // logging response API
 
         return res.getBody().jsonPath().get("id");
+    }
+
+    public void checkResponseBodyCreateUserFailed(String expectedMessage) {
+        System.out.println("validation response body profile user process failed");
+        JSONObject notification = new JSONObject(res.getBody().asString()); // get data json in object
+
+        // verify data
+        String actualMessage = notification.get("error").toString();
+        System.out.println("actual message: " + actualMessage);
+        Assert.assertEquals(actualMessage, expectedMessage);
     }
 
     public void checkResponseBodyCreateUser(UserProfile dataTestUser) throws ParseException {

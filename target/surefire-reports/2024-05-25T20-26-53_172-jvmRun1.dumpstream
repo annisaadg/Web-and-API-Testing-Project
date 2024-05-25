@@ -1,0 +1,80 @@
+# Created at 2024-05-25T20:27:34.622
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '#'.
+java.lang.IllegalArgumentException: Stream stdin corrupted. Expected comma after third character in command '#'.
+	at org.apache.maven.plugin.surefire.booterclient.output.ForkClient$OperationalData.<init>(ForkClient.java:507)
+	at org.apache.maven.plugin.surefire.booterclient.output.ForkClient.processLine(ForkClient.java:210)
+	at org.apache.maven.plugin.surefire.booterclient.output.ForkClient.consumeLine(ForkClient.java:177)
+	at org.apache.maven.plugin.surefire.booterclient.output.ThreadedStreamConsumer$Pumper.run(ThreadedStreamConsumer.java:88)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+
+# Created at 2024-05-25T20:27:34.813
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '# There is insufficient memory for the Java Runtime Environment to continue.'.
+java.lang.IllegalArgumentException: Stream stdin corrupted. Expected comma after third character in command '# There is insufficient memory for the Java Runtime Environment to continue.'.
+	at org.apache.maven.plugin.surefire.booterclient.output.ForkClient$OperationalData.<init>(ForkClient.java:507)
+	at org.apache.maven.plugin.surefire.booterclient.output.ForkClient.processLine(ForkClient.java:210)
+	at org.apache.maven.plugin.surefire.booterclient.output.ForkClient.consumeLine(ForkClient.java:177)
+	at org.apache.maven.plugin.surefire.booterclient.output.ThreadedStreamConsumer$Pumper.run(ThreadedStreamConsumer.java:88)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+
+# Created at 2024-05-25T20:27:34.813
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '# Native memory allocation (malloc) failed to allocate 1156688 bytes for Chunk::new'.
+java.lang.IllegalArgumentException: Stream stdin corrupted. Expected comma after third character in command '# Native memory allocation (malloc) failed to allocate 1156688 bytes for Chunk::new'.
+	at org.apache.maven.plugin.surefire.booterclient.output.ForkClient$OperationalData.<init>(ForkClient.java:507)
+	at org.apache.maven.plugin.surefire.booterclient.output.ForkClient.processLine(ForkClient.java:210)
+	at org.apache.maven.plugin.surefire.booterclient.output.ForkClient.consumeLine(ForkClient.java:177)
+	at org.apache.maven.plugin.surefire.booterclient.output.ThreadedStreamConsumer$Pumper.run(ThreadedStreamConsumer.java:88)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+
+# Created at 2024-05-25T20:27:34.816
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '# An error report file with more information is saved as:'.
+java.lang.IllegalArgumentException: Stream stdin corrupted. Expected comma after third character in command '# An error report file with more information is saved as:'.
+	at org.apache.maven.plugin.surefire.booterclient.output.ForkClient$OperationalData.<init>(ForkClient.java:507)
+	at org.apache.maven.plugin.surefire.booterclient.output.ForkClient.processLine(ForkClient.java:210)
+	at org.apache.maven.plugin.surefire.booterclient.output.ForkClient.consumeLine(ForkClient.java:177)
+	at org.apache.maven.plugin.surefire.booterclient.output.ThreadedStreamConsumer$Pumper.run(ThreadedStreamConsumer.java:88)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+
+# Created at 2024-05-25T20:27:34.817
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '# D:\Polban\SEMESTER 6\Pengujian Perangkat Lunak\PRAKTEK\Tubes\TubesTestingProject\hs_err_pid17708.log'.
+java.lang.IllegalArgumentException: Stream stdin corrupted. Expected comma after third character in command '# D:\Polban\SEMESTER 6\Pengujian Perangkat Lunak\PRAKTEK\Tubes\TubesTestingProject\hs_err_pid17708.log'.
+	at org.apache.maven.plugin.surefire.booterclient.output.ForkClient$OperationalData.<init>(ForkClient.java:507)
+	at org.apache.maven.plugin.surefire.booterclient.output.ForkClient.processLine(ForkClient.java:210)
+	at org.apache.maven.plugin.surefire.booterclient.output.ForkClient.consumeLine(ForkClient.java:177)
+	at org.apache.maven.plugin.surefire.booterclient.output.ThreadedStreamConsumer$Pumper.run(ThreadedStreamConsumer.java:88)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+
+# Created at 2024-05-25T20:27:34.822
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '#'.
+java.lang.IllegalArgumentException: Stream stdin corrupted. Expected comma after third character in command '#'.
+	at org.apache.maven.plugin.surefire.booterclient.output.ForkClient$OperationalData.<init>(ForkClient.java:507)
+	at org.apache.maven.plugin.surefire.booterclient.output.ForkClient.processLine(ForkClient.java:210)
+	at org.apache.maven.plugin.surefire.booterclient.output.ForkClient.consumeLine(ForkClient.java:177)
+	at org.apache.maven.plugin.surefire.booterclient.output.ThreadedStreamConsumer$Pumper.run(ThreadedStreamConsumer.java:88)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+
+# Created at 2024-05-25T20:27:34.822
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '# Compiler replay data is saved as:'.
+java.lang.IllegalArgumentException: Stream stdin corrupted. Expected comma after third character in command '# Compiler replay data is saved as:'.
+	at org.apache.maven.plugin.surefire.booterclient.output.ForkClient$OperationalData.<init>(ForkClient.java:507)
+	at org.apache.maven.plugin.surefire.booterclient.output.ForkClient.processLine(ForkClient.java:210)
+	at org.apache.maven.plugin.surefire.booterclient.output.ForkClient.consumeLine(ForkClient.java:177)
+	at org.apache.maven.plugin.surefire.booterclient.output.ThreadedStreamConsumer$Pumper.run(ThreadedStreamConsumer.java:88)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+
+# Created at 2024-05-25T20:27:34.932
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '# D:\Polban\SEMESTER 6\Pengujian Perangkat Lunak\PRAKTEK\Tubes\TubesTestingProject\replay_pid17708.log'.
+java.lang.IllegalArgumentException: Stream stdin corrupted. Expected comma after third character in command '# D:\Polban\SEMESTER 6\Pengujian Perangkat Lunak\PRAKTEK\Tubes\TubesTestingProject\replay_pid17708.log'.
+	at org.apache.maven.plugin.surefire.booterclient.output.ForkClient$OperationalData.<init>(ForkClient.java:507)
+	at org.apache.maven.plugin.surefire.booterclient.output.ForkClient.processLine(ForkClient.java:210)
+	at org.apache.maven.plugin.surefire.booterclient.output.ForkClient.consumeLine(ForkClient.java:177)
+	at org.apache.maven.plugin.surefire.booterclient.output.ThreadedStreamConsumer$Pumper.run(ThreadedStreamConsumer.java:88)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+

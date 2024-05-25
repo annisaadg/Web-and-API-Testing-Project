@@ -64,9 +64,10 @@ public class StepDefs {
 
     @When("I send a POST request with the user data")
     public void hitPostCreateNewUserValid() {
-        // check status response same with param statusCode
-        String userId = apiUser.hitAPIPostNewUser(dataTestCreateUser);  // Capture user ID if needed
-        prefs.put("currentUserID", userId);  // Save user ID for later use
+        apiUser.hitAPIPostNewUser(dataTestCreateUser);  
+        if (apiUser.getRes() == null) {
+            System.out.println("Error: Null response received.");
+        } 
     }
 
     @Then("The API response status code should be {int}")
@@ -79,11 +80,11 @@ public class StepDefs {
         switch (dataType) {
             case "full":
                 apiUser.checkResponseBodyCreateUser(dataTestCreateUser);
-                APIRequestProcessor.validationResponseData(apiUser.getRes(), "post_create_user_normal.json");
+                APIRequestProcessor.validationResponseData(apiUser.getRes(), "post_full_fields.json");
                 break;
             case "required":
                 apiUser.checkResponseBodyCreateUserRequired(dataTestCreateUser);
-                APIRequestProcessor.validationResponseData(apiUser.getRes(), "post_half_user.json");
+                APIRequestProcessor.validationResponseData(apiUser.getRes(), "post_required_fields.json");
                 break;
             default:
                 break;
@@ -93,5 +94,10 @@ public class StepDefs {
     @When("I prepare the app-id {string}")
     public void i_prepare_for_app_id(String appid) {
         RequestAPIUserManagement.setUpHeader(appid);
+    }
+
+    @Then("The response body should contain error {string}")
+    public void The_response_body_should_contain(String errorType) {
+        apiUser.checkResponseBodyCreateUserFailed(errorType);
     }
 }
