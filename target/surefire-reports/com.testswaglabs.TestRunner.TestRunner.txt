@@ -1,7 +1,0 @@
--------------------------------------------------------------------------------
-Test set: com.testswaglabs.TestRunner.TestRunner
--------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 39.418 s <<< FAILURE! - in com.testswaglabs.TestRunner.TestRunner
-User attempts to login without providing username and password(User Login)  Time elapsed: 34.251 s  <<< FAILURE!
-org.junit.ComparisonFailure: expected:<[You need Username & Password!]> but was:<[Epic sadface: Username is required]>
-
