@@ -1,0 +1,120 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2024-05-24T19:32:25.020Z",
+        "line": 8,
+        "name": "Test create new user normal",
+        "description": "",
+        "id": "post;test-create-new-user-normal",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 60092600,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "prepare url for \"CREATE_NEW_USER\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"CREATE_NEW_USER\"",
+                  "offset": 16
+                }
+              ],
+              "location": "com.tubes.dummyapi.stepDef.StepDefs.prepare_url_for(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 14233169700,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "hit api post create new user",
+            "match": {
+              "location": "com.tubes.dummyapi.stepDef.StepDefs.hitApiPostCreateNewUser()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 9943600,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "validation status code api user is equals 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 42
+                }
+              ],
+              "location": "com.tubes.dummyapi.stepDef.StepDefs.validation_status_code_is_equals(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: expected [2024-05-25] but found [2024-05-24]\r\n\tat org.testng.Assert.fail(Assert.java:110)\r\n\tat org.testng.Assert.failNotEquals(Assert.java:1413)\r\n\tat org.testng.Assert.assertEqualsImpl(Assert.java:149)\r\n\tat org.testng.Assert.assertEquals(Assert.java:131)\r\n\tat org.testng.Assert.assertEquals(Assert.java:655)\r\n\tat org.testng.Assert.assertEquals(Assert.java:665)\r\n\tat com.tubes.dummyapi.logic.APIUserTest.checkResponseBodyCreateUser(APIUserTest.java:121)\r\n\tat com.tubes.dummyapi.stepDef.StepDefs.validationResponseBodyPostCreateNewUser(StepDefs.java:60)\r\n\tat ✽.validation response body post create new user(file:///D:/Polban/SEMESTER%206/Pengujian%20Perangkat%20Lunak/PRAKTEK/Tubes/TubesTestingProject/src/test/resources/dummyapi/features/POST.feature:12)\r\n",
+              "duration": 289974600,
+              "status": "failed"
+            },
+            "line": 12,
+            "name": "validation response body post create new user",
+            "match": {
+              "location": "com.tubes.dummyapi.stepDef.StepDefs.validationResponseBodyPostCreateNewUser()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 10043500,
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "validation response json with JSONSchema \"post_create_user_normal.json\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"post_create_user_normal.json\"",
+                  "offset": 41
+                }
+              ],
+              "location": "com.tubes.dummyapi.stepDef.StepDefs.validation_response_json_with_json_schema(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@api"
+          },
+          {
+            "name": "@post-negative"
+          }
+        ]
+      }
+    ],
+    "name": "POST",
+    "description": "",
+    "id": "post",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/dummyapi/features/POST.feature",
+    "tags": [
+      {
+        "name": "@api",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
