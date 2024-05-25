@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.tubes.dummyapi.runner.APITestRunner" time="22.41" tests="5" errors="0" skipped="0" failures="2">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.tubes.websaucedemo.TestRunner.WebTestRunner" time="148.094" tests="9" errors="0" skipped="0" failures="2">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17\bin"/>
-    <property name="sun.java.command" value="C:\Users\ASUS\AppData\Local\Temp\surefire14441482011832084065\surefirebooter4146493604467095376.jar C:\Users\ASUS\AppData\Local\Temp\surefire14441482011832084065 2024-05-25T20-54-02_328-jvmRun1 surefire10413621458773603336tmp surefire_011802388392014430706tmp"/>
+    <property name="sun.java.command" value="C:\Users\ASUS\AppData\Local\Temp\surefire18259411437633166403\surefirebooter1988059458845215294.jar C:\Users\ASUS\AppData\Local\Temp\surefire18259411437633166403 2024-05-25T20-50-18_398-jvmRun1 surefire17344826958530497583tmp surefire_017716727645936122531tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="D:\Polban\SEMESTER 6\Pengujian Perangkat Lunak\PRAKTEK\Tubes\TubesTestingProject\target\test-classes;D:\Polban\SEMESTER 6\Pengujian Perangkat Lunak\PRAKTEK\Tubes\TubesTestingProject\target\classes;C:\Users\ASUS\.m2\repository\io\cucumber\cucumber-java\6.9.0\cucumber-java-6.9.0.jar;C:\Users\ASUS\.m2\repository\io\cucumber\cucumber-core\6.9.0\cucumber-core-6.9.0.jar;C:\Users\ASUS\.m2\repository\io\cucumber\cucumber-gherkin\6.9.0\cucumber-gherkin-6.9.0.jar;C:\Users\ASUS\.m2\repository\io\cucumber\cucumber-gherkin-messages\6.9.0\cucumber-gherkin-messages-6.9.0.jar;C:\Users\ASUS\.m2\repository\io\cucumber\messages\13.2.0\messages-13.2.0.jar;C:\Users\ASUS\.m2\repository\io\cucumber\tag-expressions\3.0.0\tag-expressions-3.0.0.jar;C:\Users\ASUS\.m2\repository\io\cucumber\cucumber-expressions\10.3.0\cucumber-expressions-10.3.0.jar;C:\Users\ASUS\.m2\repository\io\cucumber\datatable\3.5.0\datatable-3.5.0.jar;C:\Users\ASUS\.m2\repository\io\cucumber\cucumber-plugin\6.9.0\cucumber-plugin-6.9.0.jar;C:\Users\ASUS\.m2\repository\io\cucumber\docstring\6.9.0\docstring-6.9.0.jar;C:\Users\ASUS\.m2\repository\io\cucumber\html-formatter\9.0.0\html-formatter-9.0.0.jar;C:\Users\ASUS\.m2\repository\io\cucumber\create-meta\2.0.4\create-meta-2.0.4.jar;C:\Users\ASUS\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\ASUS\.m2\repository\io\github\bonigarcia\webdrivermanager\5.8.0\webdrivermanager-5.8.0.jar;C:\Users\ASUS\.m2\repository\org\slf4j\slf4j-api\2.0.12\slf4j-api-2.0.12.jar;C:\Users\ASUS\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\ASUS\.m2\repository\com\github\docker-java\docker-java\3.3.6\docker-java-3.3.6.jar;C:\Users\ASUS\.m2\repository\com\github\docker-java\docker-java-core\3.3.6\docker-java-core-3.3.6.jar;C:\Users\ASUS\.m2\repository\com\github\docker-java\docker-java-api\3.3.6\docker-java-api-3.3.6.jar;C:\Users\ASUS\.m2\repository\org\bouncycastle\bcpkix-jdk18on\1.76\bcpkix-jdk18on-1.76.jar;C:\Users\ASUS\.m2\repository\org\bouncycastle\bcprov-jdk18on\1.76\bcprov-jdk18on-1.76.jar;C:\Users\ASUS\.m2\repository\org\bouncycastle\bcutil-jdk18on\1.76\bcutil-jdk18on-1.76.jar;C:\Users\ASUS\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\ASUS\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.3.6\docker-java-transport-httpclient5-3.3.6.jar;C:\Users\ASUS\.m2\repository\com\github\docker-java\docker-java-transport\3.3.6\docker-java-transport-3.3.6.jar;C:\Users\ASUS\.m2\repository\net\java\dev\jna\jna\5.13.0\jna-5.13.0.jar;C:\Users\ASUS\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\ASUS\.m2\repository\org\apache\commons\commons-compress\1.26.1\commons-compress-1.26.1.jar;C:\Users\ASUS\.m2\repository\commons-codec\commons-codec\1.16.1\commons-codec-1.16.1.jar;C:\Users\ASUS\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.2.1\httpclient5-5.2.1.jar;C:\Users\ASUS\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.2\httpcore5-5.2.jar;C:\Users\ASUS\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2\httpcore5-h2-5.2.jar;C:\Users\ASUS\.m2\repository\junit\junit\4.13.1\junit-4.13.1.jar;C:\Users\ASUS\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\ASUS\.m2\repository\io\cucumber\cucumber-junit\6.9.0\cucumber-junit-6.9.0.jar;C:\Users\ASUS\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Users\ASUS\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\ASUS\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\ASUS\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Users\ASUS\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\ASUS\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Users\ASUS\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Users\ASUS\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Users\ASUS\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Users\ASUS\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\ASUS\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\ASUS\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\ASUS\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\ASUS\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\ASUS\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\ASUS\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\ASUS\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\ASUS\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\ASUS\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\ASUS\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\ASUS\.m2\repository\net\masterthought\cucumber-reporting\5.4.0\cucumber-reporting-5.4.0.jar;C:\Users\ASUS\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.10.1\jackson-databind-2.10.1.jar;C:\Users\ASUS\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.1\jackson-annotations-2.10.1.jar;C:\Users\ASUS\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.10.1\jackson-core-2.10.1.jar;C:\Users\ASUS\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.10.1\jackson-datatype-jsr310-2.10.1.jar;C:\Users\ASUS\.m2\repository\org\apache\velocity\velocity-engine-core\2.1\velocity-engine-core-2.1.jar;C:\Users\ASUS\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;C:\Users\ASUS\.m2\repository\joda-time\joda-time\2.10.5\joda-time-2.10.5.jar;C:\Users\ASUS\.m2\repository\commons-io\commons-io\2.6\commons-io-2.6.jar;C:\Users\ASUS\.m2\repository\org\codehaus\plexus\plexus-utils\3.3.0\plexus-utils-3.3.0.jar;C:\Users\ASUS\.m2\repository\org\jsoup\jsoup\1.12.1\jsoup-1.12.1.jar;C:\Users\ASUS\.m2\repository\com\googlecode\owasp-java-html-sanitizer\owasp-java-html-sanitizer\20191001.1\owasp-java-html-sanitizer-20191001.1.jar;C:\Users\ASUS\.m2\repository\commons-configuration\commons-configuration\1.10\commons-configuration-1.10.jar;C:\Users\ASUS\.m2\repository\commons-lang\commons-lang\2.6\commons-lang-2.6.jar;C:\Users\ASUS\.m2\repository\commons-logging\commons-logging\1.1.1\commons-logging-1.1.1.jar;C:\Users\ASUS\.m2\repository\org\json\json\20210307\json-20210307.jar;C:\Users\ASUS\.m2\repository\io\rest-assured\rest-assured\4.3.3\rest-assured-4.3.3.jar;C:\Users\ASUS\.m2\repository\org\codehaus\groovy\groovy\3.0.7\groovy-3.0.7.jar;C:\Users\ASUS\.m2\repository\org\codehaus\groovy\groovy-xml\3.0.7\groovy-xml-3.0.7.jar;C:\Users\ASUS\.m2\repository\org\apache\httpcomponents\httpclient\4.5.3\httpclient-4.5.3.jar;C:\Users\ASUS\.m2\repository\org\apache\httpcomponents\httpcore\4.4.6\httpcore-4.4.6.jar;C:\Users\ASUS\.m2\repository\org\apache\httpcomponents\httpmime\4.5.3\httpmime-4.5.3.jar;C:\Users\ASUS\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\ASUS\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\ASUS\.m2\repository\io\rest-assured\json-path\4.3.3\json-path-4.3.3.jar;C:\Users\ASUS\.m2\repository\org\codehaus\groovy\groovy-json\3.0.7\groovy-json-3.0.7.jar;C:\Users\ASUS\.m2\repository\io\rest-assured\rest-assured-common\4.3.3\rest-assured-common-4.3.3.jar;C:\Users\ASUS\.m2\repository\io\rest-assured\xml-path\4.3.3\xml-path-4.3.3.jar;C:\Users\ASUS\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.3\jakarta.xml.bind-api-2.3.3.jar;C:\Users\ASUS\.m2\repository\jakarta\activation\jakarta.activation-api\1.2.2\jakarta.activation-api-1.2.2.jar;C:\Users\ASUS\.m2\repository\com\sun\xml\bind\jaxb-impl\2.3.3\jaxb-impl-2.3.3.jar;C:\Users\ASUS\.m2\repository\io\rest-assured\json-schema-validator\4.3.3\json-schema-validator-4.3.3.jar;C:\Users\ASUS\.m2\repository\com\github\java-json-tools\json-schema-validator\2.2.14\json-schema-validator-2.2.14.jar;C:\Users\ASUS\.m2\repository\com\github\java-json-tools\jackson-coreutils-equivalence\1.0\jackson-coreutils-equivalence-1.0.jar;C:\Users\ASUS\.m2\repository\com\github\java-json-tools\jackson-coreutils\2.0\jackson-coreutils-2.0.jar;C:\Users\ASUS\.m2\repository\com\github\java-json-tools\msg-simple\1.2\msg-simple-1.2.jar;C:\Users\ASUS\.m2\repository\com\github\java-json-tools\btf\1.3\btf-1.3.jar;C:\Users\ASUS\.m2\repository\com\github\java-json-tools\json-schema-core\1.2.14\json-schema-core-1.2.14.jar;C:\Users\ASUS\.m2\repository\com\github\java-json-tools\uri-template\0.10\uri-template-0.10.jar;C:\Users\ASUS\.m2\repository\org\mozilla\rhino\1.7.7.2\rhino-1.7.7.2.jar;C:\Users\ASUS\.m2\repository\com\sun\mail\mailapi\1.6.2\mailapi-1.6.2.jar;C:\Users\ASUS\.m2\repository\com\googlecode\libphonenumber\libphonenumber\8.11.1\libphonenumber-8.11.1.jar;C:\Users\ASUS\.m2\repository\net\sf\jopt-simple\jopt-simple\5.0.4\jopt-simple-5.0.4.jar;C:\Users\ASUS\.m2\repository\org\assertj\assertj-core\3.24.2\assertj-core-3.24.2.jar;C:\Users\ASUS\.m2\repository\org\apache\commons\commons-lang3\3.12.0\commons-lang3-3.12.0.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\ASUS\AppData\Local\Temp\surefire14441482011832084065\surefirebooter4146493604467095376.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\ASUS\AppData\Local\Temp\surefire18259411437633166403\surefirebooter1988059458845215294.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17+35-LTS-2724"/>
@@ -56,67 +56,69 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="Test creating a new user with full fields" classname="POST" time="15.372">
-    <failure message="expected:&lt;200&gt; but was:&lt;400&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected:<200> but was:<400>
+  <testcase name="Verifikasi Tampilan Daftar Barang" classname="Dashboard" time="22.566"/>
+  <testcase name="Verifikasi Tampilan Menuju Halaman Cart" classname="Dashboard" time="14.192"/>
+  <testcase name="Validasi Button &quot;Add to Cart&quot; Berubah menjadi &quot;Remove&quot;" classname="Dashboard" time="11.74"/>
+  <testcase name="User successfully logs in with registered username and password" classname="User Login" time="10.058"/>
+  <testcase name="User attempts to login without providing username and password" classname="User Login" time="9.747">
+    <failure message="expected:&lt;[You need Username &amp; Password!]&gt; but was:&lt;[Epic sadface: Username is required]&gt;" type="org.junit.ComparisonFailure"><![CDATA[org.junit.ComparisonFailure: expected:<[You need Username & Password!]> but was:<[Epic sadface: Username is required]>
 ]]></failure>
     <system-out><![CDATA[
-@post @post-positive
-Scenario: Test creating a new user with full fields                                                &amp#27;[90m# src/test/resources/dummyapi/features/POST.feature:5&amp#27;[0m
-Prepare URL : CREATE_NEW_USER
-URL is : https://dummyapi.io/data/v1/user/create
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI set up the URL for &amp#27;[0m&amp#27;[32m&amp#27;[1m"create new user"&amp#27;[0m                                                     &amp#27;[90m# com.tubes.dummyapi.stepDef.StepDefs.prepare_url_for(java.lang.String)&amp#27;[0m
-  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI prepare the app-id &amp#27;[0m&amp#27;[32m&amp#27;[1m"662e68fabb70a7086a25966e"&amp#27;[0m                                              &amp#27;[90m# com.tubes.dummyapi.stepDef.StepDefs.i_prepare_for_app_id(java.lang.String)&amp#27;[0m
-  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI load user profile data from JSON file &amp#27;[0m&amp#27;[32m&amp#27;[1m"src/test/resources/dummyapi/data/user_profile.json"&amp#27;[0m &amp#27;[90m# com.tubes.dummyapi.stepDef.StepDefs.a_JSON_file_with_user_profile_data(java.lang.String)&amp#27;[0m
-Gson :{"title":"ms","firstName":"Park","lastName":"Jihu","picture":"https://www.wowkeren.com/display/images/photo/2022/02/09/00410365.jpg","gender":"female","email":"habibti@gmail.com","dateOfBirth":"2003-11-07T00:00:00.000Z","phone":"01087654321","location":{"street":"Hummingbird Street","city":"Seoul","state":"Seoul","country":"South Korea","timezone":"+9:00"}}
-{"error":"BODY_NOT_VALID","data":{"email":"Email already used"}}
-  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mI send a POST request with the user data&amp#27;[0m                                                    &amp#27;[90m# com.tubes.dummyapi.stepDef.StepDefs.hitPostCreateNewUserValid()&amp#27;[0m
-check status code : 200
-  &amp#27;[31mThen &amp#27;[0m&amp#27;[31mThe API response status code should be &amp#27;[0m&amp#27;[31m&amp#27;[1m200&amp#27;[0m                                                  &amp#27;[90m# com.tubes.dummyapi.stepDef.StepDefs.validation_status_code_is_equals(java.lang.Integer)&amp#27;[0m
-      &amp#27;[31mjava.lang.AssertionError: expected:<200> but was:<400>
-	at org.junit.Assert.fail(Assert.java:89)
-	at org.junit.Assert.failNotEquals(Assert.java:835)
-	at org.junit.Assert.assertEquals(Assert.java:647)
-	at org.junit.Assert.assertEquals(Assert.java:633)
-	at com.tubes.dummyapi.logic.APIRequestProcessor.validationStatusCode(APIRequestProcessor.java:28)
-	at com.tubes.dummyapi.stepDef.StepDefs.validation_status_code_is_equals(StepDefs.java:75)
-	at âœ½.The API response status code should be 200(file:///D:/Polban/SEMESTER%206/Pengujian%20Perangkat%20Lunak/PRAKTEK/Tubes/TubesTestingProject/src/test/resources/dummyapi/features/POST.feature:10)
+@login @login-negative
+Scenario: User attempts to login without providing username and password &amp#27;[90m# src/test/resources/websaucedemo/features/Login.feature:13&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI am on the login page&amp#27;[0m                                           &amp#27;[90m# com.tubes.websaucedemo.stepdefinition.LoginStepDefinitions.goToLoginPage()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mI fill in the username &amp#27;[0m&amp#27;[32m&amp#27;[1m""&amp#27;[0m                                         &amp#27;[90m# com.tubes.websaucedemo.stepdefinition.LoginStepDefinitions.enterUsername(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI fill in the password &amp#27;[0m&amp#27;[32m&amp#27;[1m""&amp#27;[0m                                          &amp#27;[90m# com.tubes.websaucedemo.stepdefinition.LoginStepDefinitions.enterPassword(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI click the login button&amp#27;[0m                                           &amp#27;[90m# com.tubes.websaucedemo.stepdefinition.LoginStepDefinitions.clickLoginButton()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI should remain on the login page&amp#27;[0m                                  &amp#27;[90m# com.tubes.websaucedemo.stepdefinition.LoginStepDefinitions.verifyRemainOnLoginPage()&amp#27;[0m
+Expected error message: You need Username & Password!
+Actual error message: Epic sadface: Username is required
+  &amp#27;[31mThen &amp#27;[0m&amp#27;[31mI should see the error message &amp#27;[0m&amp#27;[31m&amp#27;[1m"You need Username & Password!"&amp#27;[0m    &amp#27;[90m# com.tubes.websaucedemo.stepdefinition.LoginStepDefinitions.verifyErrorMessage(java.lang.String)&amp#27;[0m
+      &amp#27;[31morg.junit.ComparisonFailure: expected:<[You need Username & Password!]> but was:<[Epic sadface: Username is required]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at com.tubes.websaucedemo.stepdefinition.LoginStepDefinitions.verifyErrorMessage(LoginStepDefinitions.java:69)
+	at âœ½.I should see the error message "You need Username & Password!"(file:///D:/Polban/SEMESTER%206/Pengujian%20Perangkat%20Lunak/PRAKTEK/Tubes/TubesTestingProject/src/test/resources/websaucedemo/features/Login.feature:19)
 &amp#27;[0m
-  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mThe response body should match the expected user creation schema with &amp#27;[0m&amp#27;[36m&amp#27;[1m"full"&amp#27;[0m&amp#27;[36m field data&amp#27;[0m      &amp#27;[90m# com.tubes.dummyapi.stepDef.StepDefs.validationResponseBodyPostCreateNewUser(java.lang.String)&amp#27;[0m
 ]]></system-out>
-    <system-err><![CDATA[SLF4J(W): No SLF4J providers were found.
-SLF4J(W): Defaulting to no-operation (NOP) logger implementation
-SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+    <system-err><![CDATA[Starting ChromeDriver 125.0.6422.78 (14db42ec38aded3304a3e624a0a038e02956b87e-refs/branch-heads/6422@{#1088}) on port 15645
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+May 25, 2024 8:51:28 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="Test creating a new user with only required fields" classname="POST" time="1.229">
-    <failure message="expected:&lt;200&gt; but was:&lt;400&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected:<200> but was:<400>
+  <testcase name="Username isn&apos;t registered in the system" classname="User Login" time="12.748">
+    <failure message="expected:&lt;[Username and password do not match any user in this service !]&gt; but was:&lt;[Epic sadface: Username and password do not match any user in this service]&gt;" type="org.junit.ComparisonFailure"><![CDATA[org.junit.ComparisonFailure: expected:<[Username and password do not match any user in this service !]> but was:<[Epic sadface: Username and password do not match any user in this service]>
 ]]></failure>
     <system-out><![CDATA[
-@post @post-positive
-Scenario: Test creating a new user with only required fields                                                &amp#27;[90m# src/test/resources/dummyapi/features/POST.feature:14&amp#27;[0m
-Prepare URL : CREATE_NEW_USER
-URL is : https://dummyapi.io/data/v1/user/create
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI set up the URL for &amp#27;[0m&amp#27;[32m&amp#27;[1m"create new user"&amp#27;[0m                                                              &amp#27;[90m# com.tubes.dummyapi.stepDef.StepDefs.prepare_url_for(java.lang.String)&amp#27;[0m
-  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI prepare the app-id &amp#27;[0m&amp#27;[32m&amp#27;[1m"662e68fabb70a7086a25966e"&amp#27;[0m                                                       &amp#27;[90m# com.tubes.dummyapi.stepDef.StepDefs.i_prepare_for_app_id(java.lang.String)&amp#27;[0m
-  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI load user profile data from JSON file &amp#27;[0m&amp#27;[32m&amp#27;[1m"src/test/resources/dummyapi/data/user_profile_required.json"&amp#27;[0m &amp#27;[90m# com.tubes.dummyapi.stepDef.StepDefs.a_JSON_file_with_user_profile_data(java.lang.String)&amp#27;[0m
-Gson :{"firstName":"Heeso","lastName":"Kim","email":"dubaai@gmail.com"}
-{"error":"BODY_NOT_VALID","data":{"email":"Email already used"}}
-  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mI send a POST request with the user data&amp#27;[0m                                                             &amp#27;[90m# com.tubes.dummyapi.stepDef.StepDefs.hitPostCreateNewUserValid()&amp#27;[0m
-check status code : 200
-  &amp#27;[31mThen &amp#27;[0m&amp#27;[31mThe API response status code should be &amp#27;[0m&amp#27;[31m&amp#27;[1m200&amp#27;[0m                                                           &amp#27;[90m# com.tubes.dummyapi.stepDef.StepDefs.validation_status_code_is_equals(java.lang.Integer)&amp#27;[0m
-      &amp#27;[31mjava.lang.AssertionError: expected:<200> but was:<400>
-	at org.junit.Assert.fail(Assert.java:89)
-	at org.junit.Assert.failNotEquals(Assert.java:835)
-	at org.junit.Assert.assertEquals(Assert.java:647)
-	at org.junit.Assert.assertEquals(Assert.java:633)
-	at com.tubes.dummyapi.logic.APIRequestProcessor.validationStatusCode(APIRequestProcessor.java:28)
-	at com.tubes.dummyapi.stepDef.StepDefs.validation_status_code_is_equals(StepDefs.java:75)
-	at âœ½.The API response status code should be 200(file:///D:/Polban/SEMESTER%206/Pengujian%20Perangkat%20Lunak/PRAKTEK/Tubes/TubesTestingProject/src/test/resources/dummyapi/features/POST.feature:19)
+@login @login-negative
+Scenario: Username isn't registered in the system                                                     &amp#27;[90m# src/test/resources/websaucedemo/features/Login.feature:22&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI am on the login page&amp#27;[0m                                                                        &amp#27;[90m# com.tubes.websaucedemo.stepdefinition.LoginStepDefinitions.goToLoginPage()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mI fill in the username &amp#27;[0m&amp#27;[32m&amp#27;[1m"standa_user"&amp#27;[0m                                                           &amp#27;[90m# com.tubes.websaucedemo.stepdefinition.LoginStepDefinitions.enterUsername(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI fill in the password &amp#27;[0m&amp#27;[32m&amp#27;[1m"secret_sauce"&amp#27;[0m                                                           &amp#27;[90m# com.tubes.websaucedemo.stepdefinition.LoginStepDefinitions.enterPassword(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI click the login button&amp#27;[0m                                                                        &amp#27;[90m# com.tubes.websaucedemo.stepdefinition.LoginStepDefinitions.clickLoginButton()&amp#27;[0m
+Expected error message: Username and password do not match any user in this service !
+Actual error message: Epic sadface: Username and password do not match any user in this service
+  &amp#27;[31mThen &amp#27;[0m&amp#27;[31mI should see the error message &amp#27;[0m&amp#27;[31m&amp#27;[1m"Username and password do not match any user in this service !"&amp#27;[0m &amp#27;[90m# com.tubes.websaucedemo.stepdefinition.LoginStepDefinitions.verifyErrorMessage(java.lang.String)&amp#27;[0m
+      &amp#27;[31morg.junit.ComparisonFailure: expected:<[Username and password do not match any user in this service !]> but was:<[Epic sadface: Username and password do not match any user in this service]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at com.tubes.websaucedemo.stepdefinition.LoginStepDefinitions.verifyErrorMessage(LoginStepDefinitions.java:69)
+	at âœ½.I should see the error message "Username and password do not match any user in this service !"(file:///D:/Polban/SEMESTER%206/Pengujian%20Perangkat%20Lunak/PRAKTEK/Tubes/TubesTestingProject/src/test/resources/websaucedemo/features/Login.feature:27)
 &amp#27;[0m
-  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mThe response body should match the expected user creation schema with &amp#27;[0m&amp#27;[36m&amp#27;[1m"required"&amp#27;[0m&amp#27;[36m field data&amp#27;[0m           &amp#27;[90m# com.tubes.dummyapi.stepDef.StepDefs.validationResponseBodyPostCreateNewUser(java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mI should remain on the login page&amp#27;[0m                                                               &amp#27;[90m# com.tubes.websaucedemo.stepdefinition.LoginStepDefinitions.verifyRemainOnLoginPage()&amp#27;[0m
 ]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 125.0.6422.78 (14db42ec38aded3304a3e624a0a038e02956b87e-refs/branch-heads/6422@{#1088}) on port 37047
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+May 25, 2024 8:51:38 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
   </testcase>
-  <testcase name="Attempt to create user without app-id in header #1" classname="POST" time="1.577"/>
-  <testcase name="Attempt to create user without app-id in header #2" classname="POST" time="0.118"/>
-  <testcase name="Attempt to create user with empty firstName field" classname="POST" time="0.692"/>
+  <testcase name="Verifikasi halaman Menu" classname="Menu" time="12.57"/>
+  <testcase name="Verifikasi menu &quot;Logout&quot;" classname="Menu" time="16.512"/>
+  <testcase name="Verifikasi menu &quot;About&quot;" classname="Menu" time="34.098"/>
 </testsuite>
