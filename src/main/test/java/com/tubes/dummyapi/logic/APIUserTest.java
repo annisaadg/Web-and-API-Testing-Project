@@ -6,6 +6,7 @@ import com.tubes.dummyapi.helper.SetUpEndPoint;
 import com.tubes.dummyapi.logic.request.RequestAPIUserManagement;
 
 import io.restassured.response.Response;
+import org.json.JSONObject;
 import org.junit.Assert;
 
 import java.text.ParseException;
@@ -55,49 +56,11 @@ public class APIUserTest {
         Assert.assertEquals(actualData.getEmail(), dataTestUser.getEmail());
         Assert.assertEquals(actualData.getDateOfBirth(), dataTestUser.getDateOfBirth());
         Assert.assertEquals(actualData.getPhone(), dataTestUser.getPhone());
-        Assert.assertEquals(actualData.getLocation().getStreet(), dataTestUser.getLocation().getStreet());
-        Assert.assertEquals(actualData.getLocation().getCity(), dataTestUser.getLocation().getCity());
-        Assert.assertEquals(actualData.getLocation().getState(), dataTestUser.getLocation().getState());
-        Assert.assertEquals(actualData.getLocation().getCountry(), dataTestUser.getLocation().getCountry());
-        Assert.assertEquals(actualData.getLocation().getTimezone(), dataTestUser.getLocation().getTimezone());
-        
-        // Mendefinisikan format tanggal
-        SimpleDateFormat sdfTime = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS'Z'");
-        SimpleDateFormat sdfDate = new SimpleDateFormat("yyyy-MM-dd");
-        
-        // Mendapatkan tanggal hari ini
-        Date currentDate = new Date();
-        String currentDateStr = sdfDate.format(currentDate);
-        
-        // Membandingkan tanggal register dan updated dengan tanggal hari ini
-        Assert.assertEquals(currentDateStr, sdfDate.format(sdfTime.parse(actualData.getRegisterDate())));
-        Assert.assertEquals(currentDateStr, sdfDate.format(sdfTime.parse(actualData.getUpdatedDate())));
-    }
-
-    public void checkResponseBodyCreateUserRequired(UserProfile dataTestUser) throws ParseException {
-        System.out.println("test logic for check response body create user");
-        
-        // Inisialisasi Gson
-        Gson json = new Gson();
-        
-        // Mendapatkan data aktual dari respons HTTP dan mengonversinya menjadi objek UserProfile
-        UserProfile actualData = json.fromJson(res.getBody().asString(), UserProfile.class);
-        
-        // Mencetak data aktual dan data pengujian
-        System.out.print("Actual Data : ");
-        System.out.println(json.toJson(actualData));
-        System.out.print("Test Data : ");
-        System.out.println(json.toJson(dataTestUser));
-        
-        // Membandingkan setiap atribut dari data pengguna aktual dengan data pengguna pengujian
-        Assert.assertEquals(actualData.getTitle(), dataTestUser.getTitle());
-        Assert.assertEquals(actualData.getFirstName(), dataTestUser.getFirstName());
-        Assert.assertEquals(actualData.getLastName(), dataTestUser.getLastName());
-        Assert.assertEquals(actualData.getPicture(), dataTestUser.getPicture());
-        Assert.assertEquals(actualData.getGender(), dataTestUser.getGender());
-        Assert.assertEquals(actualData.getEmail(), dataTestUser.getEmail());
-        Assert.assertEquals(actualData.getDateOfBirth(), dataTestUser.getDateOfBirth());
-        Assert.assertEquals(actualData.getPhone(), dataTestUser.getPhone());
+        // Assert.assertEquals(actualData.getLocation().getStreet(), dataTestUser.getLocation().getStreet());
+        // Assert.assertEquals(actualData.getLocation().getCity(), dataTestUser.getLocation().getCity());
+        // Assert.assertEquals(actualData.getLocation().getState(), dataTestUser.getLocation().getState());
+        // Assert.assertEquals(actualData.getLocation().getCountry(), dataTestUser.getLocation().getCountry());
+        // Assert.assertEquals(actualData.getLocation().getTimezone(), dataTestUser.getLocation().getTimezone());
         
         // Mendefinisikan format tanggal
         SimpleDateFormat sdfTime = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS'Z'");

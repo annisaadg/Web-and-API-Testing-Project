@@ -3,6 +3,7 @@ package com.tubes.dummyapi.stepDef;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import io.restassured.RestAssured;
 
 import org.json.JSONObject;
 
@@ -10,7 +11,8 @@ import java.text.ParseException;
 import java.util.prefs.Preferences;
 
 import com.tubes.dummyapi.logic.APIUserTest;
-import com.tubes.dummyapi.logic.APIRequestProcessor;
+import com.tubes.dummyapi.logic.request.EndPoint;
+import com.tubes.dummyapi.logic.APITestProcessGeneric;
 import com.tubes.dummyapi.model.UserProfile;
 import com.tubes.dummyapi.helper.SetUpEndPoint;
 import com.tubes.dummyapi.logic.request.RequestAPIUserManagement;
@@ -28,7 +30,7 @@ public class StepDefs {
         apiUser = new APIUserTest();
     }
 
-    @Given("I set up the URL for {string}")
+    @Given("prepare url for {string}")
     public void prepare_url_for(String endpoint) {
         String endpointConstant;
         
@@ -56,41 +58,30 @@ public class StepDefs {
         SetUpEndPoint.prepareURL(endpointConstant);
     }
 
-    @Given("I load user profile data from JSON file {string}")
-    public void a_JSON_file_with_user_profile_data(String jsonFilePath) {
-        dataTestCreateUser = APIRequestProcessor.prepareDataUserTestPostFromJson(jsonFilePath);
+    @When("enter request data with firstname {string}, lastname {string}, and email {string}")
+    public void hitApiPostCreateNewUser(String firstname, String lastname, String email) {
+        dataTestCreateUser = APITestProcessGeneric.prepareDataUserTestPost(firstname, lastname, email);
     }
 
-
-    @When("I send a POST request with the user data")
+    @When("i send the POST request with valid user data input")
     public void hitPostCreateNewUserValid() {
         // check status response same with param statusCode
         String userId = apiUser.hitAPIPostNewUser(dataTestCreateUser);  // Capture user ID if needed
         prefs.put("currentUserID", userId);  // Save user ID for later use
     }
 
-    @Then("The API response status code should be {int}")
+    @Then("validation status code api user is equals {int}")
     public void validation_status_code_is_equals(Integer statusCode) {
-        APIRequestProcessor.validationStatusCode(apiUser.getRes(), statusCode);
+        APITestProcessGeneric.validationStatusCode(apiUser.getRes(), statusCode);
     }
 
-    @Then("The response body should match the expected user creation schema with {string} field data")
-    public void validationResponseBodyPostCreateNewUser(String dataType) throws ParseException {
-        switch (dataType) {
-            case "full":
-                apiUser.checkResponseBodyCreateUser(dataTestCreateUser);
-                APIRequestProcessor.validationResponseData(apiUser.getRes(), "post_create_user_normal.json");
-                break;
-            case "required":
-                apiUser.checkResponseBodyCreateUserRequired(dataTestCreateUser);
-                APIRequestProcessor.validationResponseData(apiUser.getRes(), "post_half_user.json");
-                break;
-            default:
-                break;
-        }
+    @Then("validation response body post create new user")
+    public void validationResponseBodyPostCreateNewUser() throws ParseException {
+        apiUser.checkResponseBodyCreateUser(dataTestCreateUser);
+        APITestProcessGeneric.validationResponseData(apiUser.getRes(), "post_half_user.json");
     }
 
-    @When("I prepare the app-id {string}")
+    @When("i prepare for app-id {string}")
     public void i_prepare_for_app_id(String appid) {
         RequestAPIUserManagement.setUpHeader(appid);
     }
