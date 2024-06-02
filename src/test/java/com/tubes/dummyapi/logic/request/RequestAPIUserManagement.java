@@ -31,5 +31,13 @@ public class RequestAPIUserManagement {
         return request.delete(endpoint + userIdParams);
     }
 
+    public static Response putUpdateUser(String endpoint, String userIdParams, UserProfile dataUser) {
+        // create data with json format
+        Gson payload = new Gson();
+        System.out.println("Gson :" + payload.toJson(dataUser));
+        return request.body(payload.toJson(dataUser)).when().put(endpoint + userIdParams); // call API update user
+    }
+    
+
 
 }

@@ -132,4 +132,15 @@ public class StepDefs {
     }
 
 
+    @When("I send a PUT request with the user id {string}")
+public void sendPutUpdateUserRequest(String userId) {
+    this.userId = userId;
+    apiUser.hitAPIPutUpdateUser(userId, dataTestCreateUser);
+    if (apiUser.getRes() == null) {
+        System.out.println("Error: Null response received.");
+    } 
+}
+
+
+
 }

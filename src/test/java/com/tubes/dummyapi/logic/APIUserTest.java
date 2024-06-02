@@ -191,4 +191,11 @@ public class APIUserTest {
 
     }
 
+    public String hitAPIPutUpdateUser(String userId, UserProfile dataUser) {
+        res = RequestAPIUserManagement.putUpdateUser(SetUpEndPoint.getURL(), userId, dataUser); // call API Update User
+        System.out.println(res.getBody().asString()); // logging response API
+    
+        return res.getBody().jsonPath().get("id");
+    }
+    
  }
