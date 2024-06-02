@@ -7,7 +7,8 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(features="src/test/resources/websaucedemo/features",
         glue= {"com.tubes.websaucedemo.stepdefinition"},
-        plugin ={"pretty","json:target/cucumber.json","html:test-report.html"}
+        plugin ={"pretty","json:target/cucumber.json","html:test-report.html"},
+        tags = "@detail"
         )
 public class WebTestRunner {
 }

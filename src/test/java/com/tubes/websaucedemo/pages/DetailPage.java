@@ -62,6 +62,10 @@ public class DetailPage {
                 && buttonAdd.isDisplayed();
     }
 
+    public boolean isDetailPageDisplayed2() {
+        return buttonRemove.isDisplayed() && shoppingCartBadge.isDisplayed();
+    }
+
     // Metode untuk mendapatkan informasi produk
     public String getNamaProduk() {
         return detailNamaProduk.getText();

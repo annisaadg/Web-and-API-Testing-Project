@@ -3,11 +3,11 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2024-06-02T07:00:14.844Z",
+        "start_timestamp": "2024-06-02T07:47:51.484Z",
         "before": [
           {
             "result": {
-              "duration": 4043428900,
+              "duration": 3716139800,
               "status": "passed"
             },
             "match": {
@@ -16,7 +16,7 @@
           },
           {
             "result": {
-              "duration": 44000700,
+              "duration": 7012200,
               "status": "passed"
             },
             "match": {
@@ -25,7 +25,7 @@
           },
           {
             "result": {
-              "duration": 2001200,
+              "duration": 2000100,
               "status": "passed"
             },
             "match": {
@@ -34,7 +34,7 @@
           },
           {
             "result": {
-              "duration": 998700,
+              "duration": 1996800,
               "status": "passed"
             },
             "match": {
@@ -49,7 +49,7 @@
         "after": [
           {
             "result": {
-              "duration": 1153243700,
+              "duration": 1938996500,
               "status": "passed"
             },
             "match": {
@@ -58,6 +58,7 @@
           },
           {
             "result": {
+              "duration": 1001400,
               "status": "passed"
             },
             "match": {
@@ -78,7 +79,7 @@
         "steps": [
           {
             "result": {
-              "duration": 6020988500,
+              "duration": 15605218500,
               "status": "passed"
             },
             "line": 6,
@@ -90,7 +91,7 @@
           },
           {
             "result": {
-              "duration": 309073700,
+              "duration": 818998400,
               "status": "passed"
             },
             "line": 7,
@@ -102,7 +103,7 @@
           },
           {
             "result": {
-              "duration": 175999200,
+              "duration": 268001300,
               "status": "passed"
             },
             "line": 8,
@@ -114,13 +115,326 @@
           },
           {
             "result": {
-              "duration": 386996700,
+              "duration": 448997100,
               "status": "passed"
             },
             "line": 9,
             "name": "I have to move to the product details page which displays product data",
             "match": {
               "location": "com.tubes.websaucedemo.stepdefinition.DetailStepDefinitions.productsDetail()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@detail"
+          },
+          {
+            "name": "@detail-positive"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-06-02T07:48:14.470Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2178999600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.tubes.websaucedemo.stepdefinition.DashboardStepDefinitions.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 4002600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.tubes.websaucedemo.stepdefinition.DetailStepDefinitions.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 999200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.tubes.websaucedemo.stepdefinition.LoginStepDefinitions.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1998700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.tubes.websaucedemo.stepdefinition.MenuStepDefinitions.setup()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "Menambahkan Produk ke Cart",
+        "description": "",
+        "id": "product-detail;menambahkan-produk-ke-cart",
+        "after": [
+          {
+            "result": {
+              "duration": 387997300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.tubes.websaucedemo.stepdefinition.MenuStepDefinitions.closeBrowser()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.tubes.websaucedemo.stepdefinition.LoginStepDefinitions.closeBrowser()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1003000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.tubes.websaucedemo.stepdefinition.DashboardStepDefinitions.closeBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 13715018000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I have successfully logged in",
+            "match": {
+              "location": "com.tubes.websaucedemo.stepdefinition.MenuStepDefinitions.verifyLoggedInSuccessfully()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1659821100,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I am on the dashboard page",
+            "match": {
+              "location": "com.tubes.websaucedemo.stepdefinition.DashboardStepDefinitions.goToDashboardPage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 126443400,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I click the product image",
+            "match": {
+              "location": "com.tubes.websaucedemo.stepdefinition.DetailStepDefinitions.clickGambarProduk()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 272998900,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I am on the detail page",
+            "match": {
+              "location": "com.tubes.websaucedemo.stepdefinition.DetailStepDefinitions.productsDetail()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 108000400,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I click the add to cart button",
+            "match": {
+              "location": "com.tubes.websaucedemo.stepdefinition.DetailStepDefinitions.clickTambahProduk()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 78087900,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I saw the Add to Cart button changed to the Remove button and the notification of the number of items on the cart icon changed where the number of items increased",
+            "match": {
+              "location": "com.tubes.websaucedemo.stepdefinition.DetailStepDefinitions.addItem()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@detail"
+          },
+          {
+            "name": "@detail-positive"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-06-02T07:48:33.028Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2029994500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.tubes.websaucedemo.stepdefinition.DashboardStepDefinitions.setup()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.tubes.websaucedemo.stepdefinition.DetailStepDefinitions.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1000900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.tubes.websaucedemo.stepdefinition.LoginStepDefinitions.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1002200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.tubes.websaucedemo.stepdefinition.MenuStepDefinitions.setup()"
+            }
+          }
+        ],
+        "line": 21,
+        "name": "Verifikasi Halaman Dashboard ketika \"Back to Product\" ditekan",
+        "description": "",
+        "id": "product-detail;verifikasi-halaman-dashboard-ketika-\"back-to-product\"-ditekan",
+        "after": [
+          {
+            "result": {
+              "duration": 412996000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.tubes.websaucedemo.stepdefinition.MenuStepDefinitions.closeBrowser()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.tubes.websaucedemo.stepdefinition.LoginStepDefinitions.closeBrowser()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1004100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.tubes.websaucedemo.stepdefinition.DashboardStepDefinitions.closeBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1481997700,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I have successfully logged in",
+            "match": {
+              "location": "com.tubes.websaucedemo.stepdefinition.MenuStepDefinitions.verifyLoggedInSuccessfully()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 330000900,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I am on the dashboard page",
+            "match": {
+              "location": "com.tubes.websaucedemo.stepdefinition.DashboardStepDefinitions.goToDashboardPage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 166002000,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I click the product image",
+            "match": {
+              "location": "com.tubes.websaucedemo.stepdefinition.DetailStepDefinitions.clickGambarProduk()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 257993400,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "I am on the detail page",
+            "match": {
+              "location": "com.tubes.websaucedemo.stepdefinition.DetailStepDefinitions.productsDetail()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 118004000,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "I click the Back to Product button",
+            "match": {
+              "location": "com.tubes.websaucedemo.stepdefinition.DetailStepDefinitions.clickBack()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 213996000,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "I am on the dashboard page",
+            "match": {
+              "location": "com.tubes.websaucedemo.stepdefinition.DashboardStepDefinitions.goToDashboardPage()"
             },
             "keyword": "Then "
           }
