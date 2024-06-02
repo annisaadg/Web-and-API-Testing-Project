@@ -1,10 +1,10 @@
 -------------------------------------------------------------------------------
 Test set: com.tubes.dummyapi.runner.APITestRunner
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 47.341 s <<< FAILURE! - in com.tubes.dummyapi.runner.APITestRunner
-Test creating a new user with full fields(POST)  Time elapsed: 36.193 s  <<< FAILURE!
+Tests run: 5, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 17.354 s <<< FAILURE! - in com.tubes.dummyapi.runner.APITestRunner
+Test creating a new user with full fields(POST)  Time elapsed: 11.713 s  <<< FAILURE!
 java.lang.AssertionError: expected:<200> but was:<400>
 
-Test creating a new user with only required fields(POST)  Time elapsed: 1.002 s  <<< FAILURE!
+Test creating a new user with only required fields(POST)  Time elapsed: 0.409 s  <<< FAILURE!
 java.lang.AssertionError: expected:<200> but was:<400>
 
