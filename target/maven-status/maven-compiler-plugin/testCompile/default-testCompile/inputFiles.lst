@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 D:\BACKUP C\001Kuliah\Semester 6\PPL\Praktik\TUBES\Web-and-API-Testing-Project\src\test\java\com\tubes\websaucedemo\pages\CartPage.java
 D:\BACKUP C\001Kuliah\Semester 6\PPL\Praktik\TUBES\Web-and-API-Testing-Project\src\test\java\com\tubes\dummyapi\helper\SetUpEndPoint.java
 D:\BACKUP C\001Kuliah\Semester 6\PPL\Praktik\TUBES\Web-and-API-Testing-Project\src\test\java\com\tubes\websaucedemo\stepdefinition\MenuStepDefinitions.java
@@ -18,3 +19,26 @@ D:\BACKUP C\001Kuliah\Semester 6\PPL\Praktik\TUBES\Web-and-API-Testing-Project\s
 D:\BACKUP C\001Kuliah\Semester 6\PPL\Praktik\TUBES\Web-and-API-Testing-Project\src\test\java\com\tubes\dummyapi\logic\APIUserTest.java
 D:\BACKUP C\001Kuliah\Semester 6\PPL\Praktik\TUBES\Web-and-API-Testing-Project\src\test\java\com\tubes\dummyapi\model\UserProfile.java
 D:\BACKUP C\001Kuliah\Semester 6\PPL\Praktik\TUBES\Web-and-API-Testing-Project\src\test\java\com\tubes\websaucedemo\pages\DashboardPage.java
+=======
+C:\Users\User\Documents\semester-6\Pengujian Perangkat Lunak\tubes\Web-and-API-Testing-Project\src\test\java\com\tubes\websaucedemo\pages\CartPage.java
+C:\Users\User\Documents\semester-6\Pengujian Perangkat Lunak\tubes\Web-and-API-Testing-Project\src\test\java\com\tubes\websaucedemo\stepdefinition\DashboardStepDefinitions.java
+C:\Users\User\Documents\semester-6\Pengujian Perangkat Lunak\tubes\Web-and-API-Testing-Project\src\test\java\com\tubes\websaucedemo\pages\DetailPage.java
+C:\Users\User\Documents\semester-6\Pengujian Perangkat Lunak\tubes\Web-and-API-Testing-Project\src\test\java\com\tubes\dummyapi\model\Location.java
+C:\Users\User\Documents\semester-6\Pengujian Perangkat Lunak\tubes\Web-and-API-Testing-Project\src\test\java\com\tubes\websaucedemo\stepdefinition\CartStepDefinitions.java
+C:\Users\User\Documents\semester-6\Pengujian Perangkat Lunak\tubes\Web-and-API-Testing-Project\src\test\java\com\tubes\dummyapi\logic\APIRequestProcessor.java
+C:\Users\User\Documents\semester-6\Pengujian Perangkat Lunak\tubes\Web-and-API-Testing-Project\src\test\java\com\tubes\dummyapi\logic\request\EndPoint.java
+C:\Users\User\Documents\semester-6\Pengujian Perangkat Lunak\tubes\Web-and-API-Testing-Project\src\test\java\com\tubes\dummyapi\helper\SetUpEndPoint.java
+C:\Users\User\Documents\semester-6\Pengujian Perangkat Lunak\tubes\Web-and-API-Testing-Project\src\test\java\com\tubes\dummyapi\logic\APIUserTest.java
+C:\Users\User\Documents\semester-6\Pengujian Perangkat Lunak\tubes\Web-and-API-Testing-Project\src\test\java\com\tubes\websaucedemo\pages\DashboardPage.java
+C:\Users\User\Documents\semester-6\Pengujian Perangkat Lunak\tubes\Web-and-API-Testing-Project\src\test\java\com\tubes\websaucedemo\stepdefinition\DetailStepDefinitions.java
+C:\Users\User\Documents\semester-6\Pengujian Perangkat Lunak\tubes\Web-and-API-Testing-Project\src\test\java\com\tubes\websaucedemo\utils\DriverManager.java
+C:\Users\User\Documents\semester-6\Pengujian Perangkat Lunak\tubes\Web-and-API-Testing-Project\src\test\java\com\tubes\dummyapi\stepDef\StepDefs.java
+C:\Users\User\Documents\semester-6\Pengujian Perangkat Lunak\tubes\Web-and-API-Testing-Project\src\test\java\com\tubes\websaucedemo\pages\LoginPage.java
+C:\Users\User\Documents\semester-6\Pengujian Perangkat Lunak\tubes\Web-and-API-Testing-Project\src\test\java\com\tubes\websaucedemo\TestRunner\WebTestRunner.java
+C:\Users\User\Documents\semester-6\Pengujian Perangkat Lunak\tubes\Web-and-API-Testing-Project\src\test\java\com\tubes\websaucedemo\stepdefinition\LoginStepDefinitions.java
+C:\Users\User\Documents\semester-6\Pengujian Perangkat Lunak\tubes\Web-and-API-Testing-Project\src\test\java\com\tubes\websaucedemo\stepdefinition\MenuStepDefinitions.java
+C:\Users\User\Documents\semester-6\Pengujian Perangkat Lunak\tubes\Web-and-API-Testing-Project\src\test\java\com\tubes\dummyapi\model\UserProfile.java
+C:\Users\User\Documents\semester-6\Pengujian Perangkat Lunak\tubes\Web-and-API-Testing-Project\src\test\java\com\tubes\dummyapi\stepDef\GetStepDefs.java
+C:\Users\User\Documents\semester-6\Pengujian Perangkat Lunak\tubes\Web-and-API-Testing-Project\src\test\java\com\tubes\dummyapi\runner\APITestRunner.java
+C:\Users\User\Documents\semester-6\Pengujian Perangkat Lunak\tubes\Web-and-API-Testing-Project\src\test\java\com\tubes\dummyapi\logic\request\RequestAPIUserManagement.java
+>>>>>>> be05f7f8e0a77e9755751524d24872c57d2e8b76
