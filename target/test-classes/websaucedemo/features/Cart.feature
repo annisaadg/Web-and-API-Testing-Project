@@ -14,7 +14,7 @@ Feature: Cart
     And I am on the dashboard page
     And I click the add to cart in product Sauce Labs Backpack button
     When I click the cart icon
-    Then I see a cart page with items that contain Title page, List of items containing item name, item description, and price, Continue Shopping button, Checkout button
+    Then I see a cart page with items that contain Title page, List of items containing item name, item description, and price, Continue Shopping button, Checkout button, Remove button
 
   @cart-positive
   Scenario: Verifikasi operasi tekan tombol "Continue Shopping" pada halaman keranjang
