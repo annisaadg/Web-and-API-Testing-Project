@@ -11,7 +11,6 @@ import org.junit.runner.RunWith;
         plugin = {
                 "pretty",
                 "html:reports/test-report-api.html"
-        },
-        tags = "@put"
+        }
 )
 public class APITestRunner {}
