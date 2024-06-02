@@ -1,0 +1,470 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2024-06-02T17:06:45.161Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4840489500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.tubes.websaucedemo.stepdefinition.CartStepDefinitions.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 15000700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.tubes.websaucedemo.stepdefinition.DashboardStepDefinitions.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 5001200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.tubes.websaucedemo.stepdefinition.DetailStepDefinitions.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 6999600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.tubes.websaucedemo.stepdefinition.LoginStepDefinitions.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 3002800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.tubes.websaucedemo.stepdefinition.MenuStepDefinitions.setup()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "Verifikasi halaman keranjang kosong",
+        "description": "",
+        "id": "cart;verifikasi-halaman-keranjang-kosong",
+        "after": [
+          {
+            "result": {
+              "duration": 1244112600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.tubes.websaucedemo.stepdefinition.MenuStepDefinitions.closeBrowser()"
+            }
+          },
+          {
+            "result": {
+              "duration": 992100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.tubes.websaucedemo.stepdefinition.LoginStepDefinitions.closeBrowser()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.tubes.websaucedemo.stepdefinition.DashboardStepDefinitions.closeBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7404194800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I have successfully logged in",
+            "match": {
+              "location": "com.tubes.websaucedemo.stepdefinition.MenuStepDefinitions.verifyLoggedInSuccessfully()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 575422000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I am on the dashboard page",
+            "match": {
+              "location": "com.tubes.websaucedemo.stepdefinition.DashboardStepDefinitions.goToDashboardPage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 209000700,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I click the cart icon",
+            "match": {
+              "location": "com.tubes.websaucedemo.stepdefinition.CartStepDefinitions.i_click_the_cart_icon()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 383999000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I see an empty cart page that contains Title page, Continue Shopping button, Checkout button",
+            "match": {
+              "location": "com.tubes.websaucedemo.stepdefinition.CartStepDefinitions.i_see_an_empty_cart_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@cart"
+          },
+          {
+            "name": "@cart-positive"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-06-02T17:07:00.005Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2010161300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.tubes.websaucedemo.stepdefinition.CartStepDefinitions.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 2000100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.tubes.websaucedemo.stepdefinition.DashboardStepDefinitions.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 996600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.tubes.websaucedemo.stepdefinition.DetailStepDefinitions.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 3001900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.tubes.websaucedemo.stepdefinition.LoginStepDefinitions.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1997500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.tubes.websaucedemo.stepdefinition.MenuStepDefinitions.setup()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "Verifikasi halaman keranjang berisi barang",
+        "description": "",
+        "id": "cart;verifikasi-halaman-keranjang-berisi-barang",
+        "after": [
+          {
+            "result": {
+              "duration": 874582200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.tubes.websaucedemo.stepdefinition.MenuStepDefinitions.closeBrowser()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.tubes.websaucedemo.stepdefinition.LoginStepDefinitions.closeBrowser()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.tubes.websaucedemo.stepdefinition.DashboardStepDefinitions.closeBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1967999300,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I have successfully logged in",
+            "match": {
+              "location": "com.tubes.websaucedemo.stepdefinition.MenuStepDefinitions.verifyLoggedInSuccessfully()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 455733000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I am on the dashboard page",
+            "match": {
+              "location": "com.tubes.websaucedemo.stepdefinition.DashboardStepDefinitions.goToDashboardPage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 161001300,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I click the add to cart in product Sauce Labs Backpack button",
+            "match": {
+              "location": "com.tubes.websaucedemo.stepdefinition.CartStepDefinitions.i_click_the_add_to_cart_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 177002500,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I click the cart icon",
+            "match": {
+              "location": "com.tubes.websaucedemo.stepdefinition.CartStepDefinitions.i_click_the_cart_icon()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 391996500,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I see a cart page with items that contain Title page, List of items containing item name, item description, and price, Continue Shopping button, Checkout button, Remove button",
+            "match": {
+              "location": "com.tubes.websaucedemo.stepdefinition.CartStepDefinitions.i_see_a_cart_page_with_items()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@cart"
+          },
+          {
+            "name": "@cart-positive"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-06-02T17:07:06.089Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1982035300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.tubes.websaucedemo.stepdefinition.CartStepDefinitions.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 4000700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.tubes.websaucedemo.stepdefinition.DashboardStepDefinitions.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 996400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.tubes.websaucedemo.stepdefinition.DetailStepDefinitions.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 2012900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.tubes.websaucedemo.stepdefinition.LoginStepDefinitions.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 2093900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.tubes.websaucedemo.stepdefinition.MenuStepDefinitions.setup()"
+            }
+          }
+        ],
+        "line": 20,
+        "name": "Verifikasi operasi tekan tombol \"Continue Shopping\" pada halaman keranjang",
+        "description": "",
+        "id": "cart;verifikasi-operasi-tekan-tombol-\"continue-shopping\"-pada-halaman-keranjang",
+        "after": [
+          {
+            "result": {
+              "duration": 623573300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.tubes.websaucedemo.stepdefinition.MenuStepDefinitions.closeBrowser()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.tubes.websaucedemo.stepdefinition.LoginStepDefinitions.closeBrowser()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.tubes.websaucedemo.stepdefinition.DashboardStepDefinitions.closeBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 10229519700,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I have successfully logged in",
+            "match": {
+              "location": "com.tubes.websaucedemo.stepdefinition.MenuStepDefinitions.verifyLoggedInSuccessfully()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1776153000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I am on the dashboard page",
+            "match": {
+              "location": "com.tubes.websaucedemo.stepdefinition.DashboardStepDefinitions.goToDashboardPage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 197999700,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I click the cart icon",
+            "match": {
+              "location": "com.tubes.websaucedemo.stepdefinition.CartStepDefinitions.i_click_the_cart_icon()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 206000300,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I click the Continue Shopping button",
+            "match": {
+              "location": "com.tubes.websaucedemo.stepdefinition.CartStepDefinitions.i_click_the_continue_shopping_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 501175200,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "I am on the dashboard page",
+            "match": {
+              "location": "com.tubes.websaucedemo.stepdefinition.DashboardStepDefinitions.goToDashboardPage()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@cart"
+          },
+          {
+            "name": "@cart-positive"
+          }
+        ]
+      }
+    ],
+    "name": "Cart",
+    "description": "",
+    "id": "cart",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/websaucedemo/features/Cart.feature",
+    "tags": [
+      {
+        "name": "@cart",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
