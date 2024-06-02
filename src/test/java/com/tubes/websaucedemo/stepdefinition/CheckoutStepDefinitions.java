@@ -6,6 +6,8 @@ import com.tubes.websaucedemo.pages.CheckoutPage;
 import com.tubes.websaucedemo.pages.DashboardPage;
 import com.tubes.websaucedemo.utils.DriverManager;
 
+import static org.junit.Assert.assertTrue;
+
 import org.openqa.selenium.WebDriver;
 
 import io.cucumber.java.After;
@@ -59,23 +61,23 @@ public class CheckoutStepDefinitions {
 
     @Then ("I should see the page title {string}")
     public void verifyPageTitle(String pageTitle){
-        checkout.isPageTitleCorrect(pageTitle);
+        assertTrue(checkout.isPageTitleCorrect(pageTitle));
     }
 
     @Then ("I should see list of items bought including the name, description, and price of the item")
     public void verifyListItemsBoughtDisplayed(){
-        checkout.isItemBoughtDisplayed();
+        assertTrue(checkout.isItemBoughtDisplayed());
     }
 
     @Then ("I should see the payment information as {string}, shipping information as {string}, and Total Price information")
     public void verifyInformationDisplayed(String paymentInfo, String shippingInfo){
-        checkout.isInformationDisplayed(paymentInfo, shippingInfo);
-        checkout.isTotalPriceDisplayed();
+        assertTrue(checkout.isInformationDisplayed(paymentInfo, shippingInfo));
+        assertTrue(checkout.isTotalPriceDisplayed());
     }
 
     @Then ("I should see Cancel Button and Continue Button")
     public void verifyCancelAndContinueButton() {
-        checkout.isButtonDisplayed();
+        assertTrue(checkout.isButtonDisplayed());
     }
 
     @And ("I have processed the checkout by filling the data with First Name {string}, Last Name {string}, and Postal Code {string}")
@@ -94,12 +96,17 @@ public class CheckoutStepDefinitions {
 
     @Then("The checkout process is complete, showing Page Title {string}, Remark {string}, and a {string} button")
     public void verifyCheckoutComplete(String pageTitle, String remark, String button) {
-        checkoutComplete.isCheckoutCompletePageCorrect(pageTitle, remark, button);
+        assertTrue(checkoutComplete.isCheckoutCompletePageCorrect(pageTitle, remark, button));
     }
 
     @When ("I click the Back Home button")
     public void goBackToDashboard() {
         checkoutComplete.clickBackHomeButton();
+    }
+
+    @And ("I should see the dashboard page title {string}")
+    public void verifyDashboardPageTitle(String pageTitle) {
+        assertTrue(dashboard.isPageTitleCorrect(pageTitle));
     }
 
     @After

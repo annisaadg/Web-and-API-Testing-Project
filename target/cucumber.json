@@ -3,11 +3,11 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2024-06-02T09:56:15.240Z",
+        "start_timestamp": "2024-06-02T10:18:08.150Z",
         "before": [
           {
             "result": {
-              "duration": 4090511900,
+              "duration": 3642975700,
               "status": "passed"
             },
             "match": {
@@ -16,7 +16,7 @@
           },
           {
             "result": {
-              "duration": 996500,
+              "duration": 920200,
               "status": "passed"
             },
             "match": {
@@ -25,7 +25,7 @@
           },
           {
             "result": {
-              "duration": 1512100,
+              "duration": 1999500,
               "status": "passed"
             },
             "match": {
@@ -34,7 +34,7 @@
           },
           {
             "result": {
-              "duration": 2995500,
+              "duration": 999000,
               "status": "passed"
             },
             "match": {
@@ -43,13 +43,13 @@
           }
         ],
         "line": 5,
-        "name": "Melanjutkan proses checkout dengan Field First Name, Last Name dan Zip/Postal Code sudah terisi",
+        "name": "Verifikasi Tampilan Daftar Barang",
         "description": "",
-        "id": "checkout;melanjutkan-proses-checkout-dengan-field-first-name--last-name-dan-zip/postal-code-sudah-terisi",
+        "id": "dashboard;verifikasi-tampilan-daftar-barang",
         "after": [
           {
             "result": {
-              "duration": 1289315300,
+              "duration": 1242194600,
               "status": "passed"
             },
             "match": {
@@ -58,7 +58,7 @@
           },
           {
             "result": {
-              "duration": 1033500,
+              "duration": 966800,
               "status": "passed"
             },
             "match": {
@@ -87,7 +87,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2436291600,
+              "duration": 1514679500,
               "status": "passed"
             },
             "line": 6,
@@ -99,7 +99,7 @@
           },
           {
             "result": {
-              "duration": 1149954000,
+              "duration": 231031500,
               "status": "passed"
             },
             "line": 7,
@@ -111,581 +111,41 @@
           },
           {
             "result": {
-              "duration": 165822900,
+              "duration": 1378137600,
               "status": "passed"
             },
             "line": 8,
-            "name": "I have added an item to the cart",
-            "match": {
-              "location": "com.tubes.websaucedemo.stepdefinition.DashboardStepDefinitions.addItemToCart()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 228119400,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "I have opened the cart page and clicked checkout",
-            "match": {
-              "location": "com.tubes.websaucedemo.stepdefinition.CheckoutStepDefinitions.clickCartIcon()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 132238500,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "I fill the First Name with \"Suci\"",
+            "name": "I should see a list of items with name, description, image, price, and an \"Add to cart\" button",
             "match": {
               "arguments": [
-                {
-                  "val": "\"Suci\"",
-                  "offset": 27
-                }
-              ],
-              "location": "com.tubes.websaucedemo.stepdefinition.CheckoutStepDefinitions.inputFirstName(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 121151700,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "I fill the Last Name with \"Awalia\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Awalia\"",
-                  "offset": 26
-                }
-              ],
-              "location": "com.tubes.websaucedemo.stepdefinition.CheckoutStepDefinitions.inputLasttName(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 130539800,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "I fill the Postal Code with \"46462\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"46462\"",
-                  "offset": 28
-                }
-              ],
-              "location": "com.tubes.websaucedemo.stepdefinition.CheckoutStepDefinitions.inputZipPostalCode(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 158072700,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "I click the continue button",
-            "match": {
-              "location": "com.tubes.websaucedemo.stepdefinition.CheckoutStepDefinitions.clickContinueButton()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 87431400,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "I should see the page title \"Checkout Overview\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Checkout Overview\"",
-                  "offset": 28
-                }
-              ],
-              "location": "com.tubes.websaucedemo.stepdefinition.CheckoutStepDefinitions.verifyPageTitle(java.lang.String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 287777100,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "I should see list of items bought including the name, description, and price of the item",
-            "match": {
-              "location": "com.tubes.websaucedemo.stepdefinition.CheckoutStepDefinitions.verifyListItemsBoughtDisplayed()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 399019500,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "I should see the payment information as \"SauceCard #31337\", shipping information as \"Free Pony Express Delivery!\", and Total Price information",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"SauceCard #31337\"",
-                  "offset": 40
-                },
-                {
-                  "val": "\"Free Pony Express Delivery!\"",
-                  "offset": 84
-                }
-              ],
-              "location": "com.tubes.websaucedemo.stepdefinition.CheckoutStepDefinitions.verifyInformationDisplayed(java.lang.String,java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 138471300,
-              "status": "passed"
-            },
-            "line": 17,
-            "name": "I should see Cancel Button and Continue Button",
-            "match": {
-              "location": "com.tubes.websaucedemo.stepdefinition.CheckoutStepDefinitions.verifyCancelAndContinueButton()"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@checkout"
-          },
-          {
-            "name": "@checkout-positive-TC4-16"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2024-06-02T09:56:26.283Z",
-        "before": [
-          {
-            "result": {
-              "duration": 2043629200,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.tubes.websaucedemo.stepdefinition.CheckoutStepDefinitions.setup()"
-            }
-          },
-          {
-            "result": {
-              "duration": 3001300,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.tubes.websaucedemo.stepdefinition.DashboardStepDefinitions.setup()"
-            }
-          },
-          {
-            "result": {
-              "duration": 1000300,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.tubes.websaucedemo.stepdefinition.LoginStepDefinitions.setup()"
-            }
-          },
-          {
-            "result": {
-              "duration": 2998700,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.tubes.websaucedemo.stepdefinition.MenuStepDefinitions.setup()"
-            }
-          }
-        ],
-        "line": 20,
-        "name": "Menyelesaikan proses checkout pada halaman checkout overview",
-        "description": "",
-        "id": "checkout;menyelesaikan-proses-checkout-pada-halaman-checkout-overview",
-        "after": [
-          {
-            "result": {
-              "duration": 1372931300,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.tubes.websaucedemo.stepdefinition.MenuStepDefinitions.closeBrowser()"
-            }
-          },
-          {
-            "result": {
-              "duration": 1002200,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.tubes.websaucedemo.stepdefinition.LoginStepDefinitions.closeBrowser()"
-            }
-          },
-          {
-            "result": {
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.tubes.websaucedemo.stepdefinition.DashboardStepDefinitions.closeBrowser()"
-            }
-          },
-          {
-            "result": {
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.tubes.websaucedemo.stepdefinition.CheckoutStepDefinitions.closeBrowser()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 1588612900,
-              "status": "passed"
-            },
-            "line": 21,
-            "name": "I have successfully logged in",
-            "match": {
-              "location": "com.tubes.websaucedemo.stepdefinition.MenuStepDefinitions.verifyLoggedInSuccessfully()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 931010700,
-              "status": "passed"
-            },
-            "line": 22,
-            "name": "I am on the dashboard page",
-            "match": {
-              "location": "com.tubes.websaucedemo.stepdefinition.DashboardStepDefinitions.goToDashboardPage()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 228556500,
-              "status": "passed"
-            },
-            "line": 23,
-            "name": "I have added an item to the cart",
-            "match": {
-              "location": "com.tubes.websaucedemo.stepdefinition.DashboardStepDefinitions.addItemToCart()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 962141700,
-              "status": "passed"
-            },
-            "line": 24,
-            "name": "I have processed the checkout by filling the data with First Name \"Suci\", Last Name \"Awalia\", and Postal Code \"46462\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Suci\"",
-                  "offset": 66
-                },
-                {
-                  "val": "\"Awalia\"",
-                  "offset": 84
-                },
-                {
-                  "val": "\"46462\"",
-                  "offset": 110
-                }
-              ],
-              "location": "com.tubes.websaucedemo.stepdefinition.CheckoutStepDefinitions.processingCheckout(java.lang.String,java.lang.String,java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 249519700,
-              "status": "passed"
-            },
-            "line": 25,
-            "name": "I click the finish button",
-            "match": {
-              "location": "com.tubes.websaucedemo.stepdefinition.CheckoutStepDefinitions.clickFinishButton()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 298930900,
-              "status": "passed"
-            },
-            "line": 26,
-            "name": "The checkout process is complete, showing Page Title \"Checkout:Complete!\", Remark \"Thank you for your order!\", and a \"Back Home\" button",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Checkout:Complete!\"",
-                  "offset": 53
-                },
-                {
-                  "val": "\"Thank you for your order!\"",
-                  "offset": 82
-                },
-                {
-                  "val": "\"Back Home\"",
-                  "offset": 117
-                }
-              ],
-              "location": "com.tubes.websaucedemo.stepdefinition.CheckoutStepDefinitions.verifyCheckoutComplete(java.lang.String,java.lang.String,java.lang.String)"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@checkout"
-          },
-          {
-            "name": "@checkout-positive-TC4-17"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2024-06-02T09:56:34.017Z",
-        "before": [
-          {
-            "result": {
-              "duration": 2119679200,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.tubes.websaucedemo.stepdefinition.CheckoutStepDefinitions.setup()"
-            }
-          },
-          {
-            "result": {
-              "duration": 999900,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.tubes.websaucedemo.stepdefinition.DashboardStepDefinitions.setup()"
-            }
-          },
-          {
-            "result": {
-              "duration": 1002700,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.tubes.websaucedemo.stepdefinition.LoginStepDefinitions.setup()"
-            }
-          },
-          {
-            "result": {
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.tubes.websaucedemo.stepdefinition.MenuStepDefinitions.setup()"
-            }
-          }
-        ],
-        "line": 29,
-        "name": "Melanjutkan belanja pada halaman checkout complete",
-        "description": "",
-        "id": "checkout;melanjutkan-belanja-pada-halaman-checkout-complete",
-        "after": [
-          {
-            "result": {
-              "duration": 938797600,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.tubes.websaucedemo.stepdefinition.MenuStepDefinitions.closeBrowser()"
-            }
-          },
-          {
-            "result": {
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.tubes.websaucedemo.stepdefinition.LoginStepDefinitions.closeBrowser()"
-            }
-          },
-          {
-            "result": {
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.tubes.websaucedemo.stepdefinition.DashboardStepDefinitions.closeBrowser()"
-            }
-          },
-          {
-            "result": {
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.tubes.websaucedemo.stepdefinition.CheckoutStepDefinitions.closeBrowser()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 2418779500,
-              "status": "passed"
-            },
-            "line": 30,
-            "name": "I have successfully logged in",
-            "match": {
-              "location": "com.tubes.websaucedemo.stepdefinition.MenuStepDefinitions.verifyLoggedInSuccessfully()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 331452500,
-              "status": "passed"
-            },
-            "line": 31,
-            "name": "I am on the dashboard page",
-            "match": {
-              "location": "com.tubes.websaucedemo.stepdefinition.DashboardStepDefinitions.goToDashboardPage()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 156979200,
-              "status": "passed"
-            },
-            "line": 32,
-            "name": "I have added an item to the cart",
-            "match": {
-              "location": "com.tubes.websaucedemo.stepdefinition.DashboardStepDefinitions.addItemToCart()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 950246500,
-              "status": "passed"
-            },
-            "line": 33,
-            "name": "I have processed the checkout by filling the data with First Name \"Suci\", Last Name \"Awalia\", and Postal Code \"46462\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Suci\"",
-                  "offset": 66
-                },
-                {
-                  "val": "\"Awalia\"",
-                  "offset": 84
-                },
-                {
-                  "val": "\"46462\"",
-                  "offset": 110
-                }
-              ],
-              "location": "com.tubes.websaucedemo.stepdefinition.CheckoutStepDefinitions.processingCheckout(java.lang.String,java.lang.String,java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 129631600,
-              "status": "passed"
-            },
-            "line": 34,
-            "name": "I click the finish button",
-            "match": {
-              "location": "com.tubes.websaucedemo.stepdefinition.CheckoutStepDefinitions.clickFinishButton()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 143928700,
-              "status": "passed"
-            },
-            "line": 35,
-            "name": "I click the Back Home button",
-            "match": {
-              "location": "com.tubes.websaucedemo.stepdefinition.CheckoutStepDefinitions.goBackToDashboard()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 366142200,
-              "status": "passed"
-            },
-            "line": 36,
-            "name": "I am on the dashboard page",
-            "match": {
-              "location": "com.tubes.websaucedemo.stepdefinition.DashboardStepDefinitions.goToDashboardPage()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 1855239000,
-              "status": "passed"
-            },
-            "line": 37,
-            "name": "I should see the page title \"Products\", a list of items with name, description, image, price, and an \"Add to cart\" button",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Products\"",
-                  "offset": 28
-                },
                 {
                   "val": "\"Add to cart\"",
-                  "offset": 101
+                  "offset": 74
                 }
               ],
-              "location": "com.tubes.websaucedemo.stepdefinition.DashboardStepDefinitions.verifyItemsDisplayed(java.lang.String,java.lang.String)"
+              "location": "com.tubes.websaucedemo.stepdefinition.DashboardStepDefinitions.verifyItemsDisplayed(java.lang.String)"
             },
             "keyword": "And "
           }
         ],
         "tags": [
           {
-            "name": "@checkout"
+            "name": "@dashboard"
           },
           {
-            "name": "@checkout-positive-TC4-18"
+            "name": "@dashboard-positive1"
           }
         ]
       }
     ],
-    "name": "Checkout",
+    "name": "Dashboard",
     "description": "",
-    "id": "checkout",
+    "id": "dashboard",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/websaucedemo/features/Checkout.feature",
+    "uri": "file:src/test/resources/websaucedemo/features/Dashboard.feature",
     "tags": [
       {
-        "name": "@checkout",
+        "name": "@dashboard",
         "type": "Tag",
         "location": {
           "line": 1,

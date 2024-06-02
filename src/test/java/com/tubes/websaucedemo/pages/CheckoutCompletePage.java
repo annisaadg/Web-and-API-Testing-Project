@@ -30,6 +30,7 @@ public class CheckoutCompletePage {
         boolean isBackHomeButtonDisplayed = backHomeButton.isDisplayed();
             
         if (!(isBackHomeButtonDisplayed)) {
+            System.out.println("Back Home button is not displayed");
             return false;
         }
 
