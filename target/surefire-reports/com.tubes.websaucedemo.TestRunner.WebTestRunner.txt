@@ -1,8 +1,0 @@
--------------------------------------------------------------------------------
-Test set: com.tubes.websaucedemo.TestRunner.WebTestRunner
--------------------------------------------------------------------------------
-<<<<<<< HEAD
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.53 s - in com.tubes.websaucedemo.TestRunner.WebTestRunner
-=======
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 22.04 s - in com.tubes.websaucedemo.TestRunner.WebTestRunner
->>>>>>> be05f7f8e0a77e9755751524d24872c57d2e8b76

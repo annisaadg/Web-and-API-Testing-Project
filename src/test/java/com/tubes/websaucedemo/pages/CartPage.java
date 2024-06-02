@@ -7,24 +7,14 @@ import org.openqa.selenium.support.PageFactory;
 
 public class CartPage {
 
-<<<<<<< HEAD
-
-    @FindBy(id = "checkout")
-    private WebElement checkoutButton;
-
-
-=======
->>>>>>> be05f7f8e0a77e9755751524d24872c57d2e8b76
     public CartPage(WebDriver driver) {
         PageFactory.initElements(driver, this);
     }
 
-<<<<<<< HEAD
     public void clickCheckout() {
         checkoutButton.click();
     }
 
-=======
     @FindBy(className = "shopping_cart_link")
     private WebElement cartIcon;
 
@@ -91,5 +81,4 @@ public class CartPage {
         return title.isDisplayed() && continueShoppingButton.isDisplayed() && checkoutButton.isDisplayed() &&
                itemName.isDisplayed() && itemDescription.isDisplayed() && itemPrice.isDisplayed();
     }
->>>>>>> be05f7f8e0a77e9755751524d24872c57d2e8b76
 }

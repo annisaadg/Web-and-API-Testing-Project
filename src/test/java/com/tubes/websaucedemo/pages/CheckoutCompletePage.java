@@ -18,6 +18,9 @@ public class CheckoutCompletePage {
     @FindBy(className="complete-header")
     private WebElement remark;
 
+    @FindBy(className="complete-text")
+    private WebElement description;
+
     @FindBy(id="back-to-products")
     private WebElement backHomeButton;
 
@@ -25,7 +28,7 @@ public class CheckoutCompletePage {
         backHomeButton.click();
     }
 
-    public boolean isCheckoutCompletePageCorrect(String expectedPageTitle, String expectedRemark, String expectedButton) {
+    public boolean isCheckoutCompletePageCorrect(String expectedPageTitle, String expectedRemark, String expectedDesc, String expectedButton) {
         
         boolean isBackHomeButtonDisplayed = backHomeButton.isDisplayed();
             
@@ -36,9 +39,10 @@ public class CheckoutCompletePage {
 
         String actualPageTitle = pageTitle.getText();
         String actualRemark = remark.getText();
+        String actualDescription = description.getText();
         String actualButton = backHomeButton.getText();
 
-        return actualPageTitle.equals(expectedPageTitle) && actualRemark.equals(expectedRemark) && actualButton.equals(expectedButton);
+        return actualPageTitle.equals(expectedPageTitle) && actualRemark.equals(expectedRemark) && actualDescription.equals(expectedDesc) && actualButton.equals(expectedButton);
     }
 
     

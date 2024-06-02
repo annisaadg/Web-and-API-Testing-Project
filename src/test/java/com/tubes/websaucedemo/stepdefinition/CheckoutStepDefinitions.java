@@ -94,9 +94,9 @@ public class CheckoutStepDefinitions {
         checkout.clickFinish();
     }
 
-    @Then("The checkout process is complete, showing Page Title {string}, Remark {string}, and a {string} button")
-    public void verifyCheckoutComplete(String pageTitle, String remark, String button) {
-        assertTrue(checkoutComplete.isCheckoutCompletePageCorrect(pageTitle, remark, button));
+    @Then("The checkout process is complete, showing Page Title {string}, Remark {string}, Description {string}, and a {string} button")
+    public void verifyCheckoutComplete(String pageTitle, String remark, String description, String button) {
+        assertTrue(checkoutComplete.isCheckoutCompletePageCorrect(pageTitle, remark, description, button));
     }
 
     @When ("I click the Back Home button")

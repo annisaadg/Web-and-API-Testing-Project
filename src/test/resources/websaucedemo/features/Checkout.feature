@@ -16,16 +16,16 @@ Feature: Checkout
     And I should see the payment information as "SauceCard #31337", shipping information as "Free Pony Express Delivery!", and Total Price information
     And I should see Cancel Button and Continue Button
 
-  @checkout-positive1
+  @checkout-positive
   Scenario: Menyelesaikan proses checkout pada halaman checkout overview 
     Given I have successfully logged in
     And I am on the dashboard page
     And I have added an item to the cart
     And I have processed the checkout by filling the data with First Name "Lebron", Last Name "James", and Postal Code "40121"
     When I click the finish button
-    Then The checkout process is complete, showing Page Title "Checkout: Complete!", Remark "Thank you for your order!", and a "Back Home" button
+    Then The checkout process is complete, showing Page Title "Checkout: Complete!", Remark "Thank you for your order!", Description "Your order has been dispatched, and will arrive just as fast as the pony can get there!", and a "Back Home" button
 
-  @checkout-positive1
+  @checkout-positive
   Scenario: Melanjutkan belanja pada halaman checkout complete 
     Given I have successfully logged in
     And I am on the dashboard page
