@@ -11,6 +11,10 @@ public class CartPage {
         PageFactory.initElements(driver, this);
     }
 
+    public void clickCheckout() {
+        checkoutButton.click();
+    }
+
     @FindBy(className = "shopping_cart_link")
     private WebElement cartIcon;
 

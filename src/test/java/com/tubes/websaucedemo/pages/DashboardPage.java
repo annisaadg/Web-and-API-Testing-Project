@@ -25,6 +25,9 @@ public class DashboardPage {
     @FindBy(id = "reset_sidebar_link")
     private WebElement resetAppStateMenu;
 
+    @FindBy(className = "title")
+    private WebElement pageTitle;
+
     @FindBy(className = "inventory_item")
     private List<WebElement> itemList;
 
@@ -62,6 +65,10 @@ public class DashboardPage {
         aboutMenu.click();
     }
 
+    public void clickCart() {
+        cartIcon.click();
+    }
+
     public boolean isMenuItemDisplayed(String menuItem) {
         switch (menuItem) {
             case "All Items":
@@ -91,6 +98,12 @@ public class DashboardPage {
         }
         return true;
     }
+
+    public boolean isPageTitleCorrect(String expectedPageTitle) {
+        String actualPageTitle = pageTitle.getText();
+        return actualPageTitle.equals(expectedPageTitle);
+    }
+
 
     public void addItemToCart() {
         itemList.get(0).findElement(By.className("btn_inventory")).click(); // Assuming we add the first item to the cart
