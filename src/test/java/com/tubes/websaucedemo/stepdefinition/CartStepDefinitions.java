@@ -26,7 +26,7 @@ public class CartStepDefinitions {
         cart = new CartPage(driver); 
     }
 
-    @And("I click the cart icon")
+    @When("I click the cart icon")
     public void i_click_the_cart_icon() {
         cart.clickCartIcon();
     }
@@ -39,7 +39,7 @@ public class CartStepDefinitions {
 
     }
 
-    @And("I click the add to cart in product Sauce Labs Backpack button")
+    @When("I click the add to cart in product Sauce Labs Backpack button")
     public void i_click_the_add_to_cart_button(){
         cart.clickAddToCartButton();
     }

@@ -3,11 +3,11 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2024-06-02T09:07:42.777Z",
+        "start_timestamp": "2024-06-02T14:09:46.604Z",
         "before": [
           {
             "result": {
-              "duration": 3881308600,
+              "duration": 3441381900,
               "status": "passed"
             },
             "match": {
@@ -16,7 +16,7 @@
           },
           {
             "result": {
-              "duration": 36001000,
+              "duration": 18999700,
               "status": "passed"
             },
             "match": {
@@ -25,7 +25,7 @@
           },
           {
             "result": {
-              "duration": 1965900,
+              "duration": 13027900,
               "status": "passed"
             },
             "match": {
@@ -34,7 +34,7 @@
           },
           {
             "result": {
-              "duration": 2001500,
+              "duration": 2576300,
               "status": "passed"
             },
             "match": {
@@ -43,7 +43,7 @@
           },
           {
             "result": {
-              "duration": 1004400,
+              "duration": 4023800,
               "status": "passed"
             },
             "match": {
@@ -52,13 +52,13 @@
           }
         ],
         "line": 5,
-        "name": "Verifikasi halaman keranjang kosong",
+        "name": "Verifikasi Halaman Detail Produk ketika Gambar Produk ditekan",
         "description": "",
-        "id": "cart;verifikasi-halaman-keranjang-kosong",
+        "id": "product-detail;verifikasi-halaman-detail-produk-ketika-gambar-produk-ditekan",
         "after": [
           {
             "result": {
-              "duration": 1098617800,
+              "duration": 768616900,
               "status": "passed"
             },
             "match": {
@@ -67,6 +67,7 @@
           },
           {
             "result": {
+              "duration": 998200,
               "status": "passed"
             },
             "match": {
@@ -75,6 +76,7 @@
           },
           {
             "result": {
+              "duration": 3004900,
               "status": "passed"
             },
             "match": {
@@ -87,7 +89,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1716211300,
+              "duration": 1769073000,
               "status": "passed"
             },
             "line": 6,
@@ -99,7 +101,7 @@
           },
           {
             "result": {
-              "duration": 340997200,
+              "duration": 593961500,
               "status": "passed"
             },
             "line": 7,
@@ -107,48 +109,48 @@
             "match": {
               "location": "com.tubes.websaucedemo.stepdefinition.DashboardStepDefinitions.goToDashboardPage()"
             },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 128003300,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "I click the cart icon",
-            "match": {
-              "location": "com.tubes.websaucedemo.stepdefinition.CartStepDefinitions.i_click_the_cart_icon()"
-            },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 174997900,
+              "duration": 182180700,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I click the product image",
+            "match": {
+              "location": "com.tubes.websaucedemo.stepdefinition.DetailStepDefinitions.clickGambarProduk()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 457696000,
               "status": "passed"
             },
             "line": 9,
-            "name": "I see an empty cart page that contains Title page, Continue Shopping button, Checkout button",
+            "name": "I have to move to the product details page which displays product data",
             "match": {
-              "location": "com.tubes.websaucedemo.stepdefinition.CartStepDefinitions.i_see_an_empty_cart_page()"
+              "location": "com.tubes.websaucedemo.stepdefinition.DetailStepDefinitions.productsDetail()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@cart"
+            "name": "@detail"
           },
           {
-            "name": "@cart-positive"
+            "name": "@detail-positive"
           }
         ]
       },
       {
-        "start_timestamp": "2024-06-02T09:07:50.351Z",
+        "start_timestamp": "2024-06-02T14:09:54.021Z",
         "before": [
           {
             "result": {
-              "duration": 2873112600,
+              "duration": 1840930700,
               "status": "passed"
             },
             "match": {
@@ -157,7 +159,7 @@
           },
           {
             "result": {
-              "duration": 1996800,
+              "duration": 2001000,
               "status": "passed"
             },
             "match": {
@@ -166,7 +168,6 @@
           },
           {
             "result": {
-              "duration": 2978500,
               "status": "passed"
             },
             "match": {
@@ -175,7 +176,7 @@
           },
           {
             "result": {
-              "duration": 1998200,
+              "duration": 5042500,
               "status": "passed"
             },
             "match": {
@@ -184,7 +185,7 @@
           },
           {
             "result": {
-              "duration": 1994800,
+              "duration": 3997900,
               "status": "passed"
             },
             "match": {
@@ -193,13 +194,13 @@
           }
         ],
         "line": 12,
-        "name": "Verifikasi halaman keranjang berisi barang",
+        "name": "Menambahkan Produk ke Cart",
         "description": "",
-        "id": "cart;verifikasi-halaman-keranjang-berisi-barang",
+        "id": "product-detail;menambahkan-produk-ke-cart",
         "after": [
           {
             "result": {
-              "duration": 437009400,
+              "duration": 1138613800,
               "status": "passed"
             },
             "match": {
@@ -208,7 +209,6 @@
           },
           {
             "result": {
-              "duration": 993300,
               "status": "passed"
             },
             "match": {
@@ -229,7 +229,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1436378600,
+              "duration": 2737335000,
               "status": "passed"
             },
             "line": 13,
@@ -241,7 +241,7 @@
           },
           {
             "result": {
-              "duration": 368999300,
+              "duration": 402766500,
               "status": "passed"
             },
             "line": 14,
@@ -249,60 +249,72 @@
             "match": {
               "location": "com.tubes.websaucedemo.stepdefinition.DashboardStepDefinitions.goToDashboardPage()"
             },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 129001000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I click the product image",
+            "match": {
+              "location": "com.tubes.websaucedemo.stepdefinition.DetailStepDefinitions.clickGambarProduk()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 285328600,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I am on the detail page",
+            "match": {
+              "location": "com.tubes.websaucedemo.stepdefinition.DetailStepDefinitions.productsDetail()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 94525200,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I click the add to cart button",
+            "match": {
+              "location": "com.tubes.websaucedemo.stepdefinition.DetailStepDefinitions.clickTambahProduk()"
+            },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 140525300,
+              "duration": 100998300,
               "status": "passed"
             },
-            "line": 15,
-            "name": "I click the add to cart in product Sauce Labs Backpack button",
+            "line": 18,
+            "name": "I saw the Add to Cart button changed to the Remove button and the notification of the number of items on the cart icon changed where the number of items increased",
             "match": {
-              "location": "com.tubes.websaucedemo.stepdefinition.CartStepDefinitions.i_click_the_add_to_cart_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 157998200,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "I click the cart icon",
-            "match": {
-              "location": "com.tubes.websaucedemo.stepdefinition.CartStepDefinitions.i_click_the_cart_icon()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 286392900,
-              "status": "passed"
-            },
-            "line": 17,
-            "name": "I see a cart page with items that contain Title page, List of items containing item name, item description, and price, Continue Shopping button, Checkout button",
-            "match": {
-              "location": "com.tubes.websaucedemo.stepdefinition.CartStepDefinitions.i_see_a_cart_page_with_items()"
+              "location": "com.tubes.websaucedemo.stepdefinition.DetailStepDefinitions.addItem()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@cart"
+            "name": "@detail"
           },
           {
-            "name": "@cart-positive"
+            "name": "@detail-positive"
           }
         ]
       },
       {
-        "start_timestamp": "2024-06-02T09:07:56.102Z",
+        "start_timestamp": "2024-06-02T14:10:00.847Z",
         "before": [
           {
             "result": {
-              "duration": 2562820000,
+              "duration": 1715492100,
               "status": "passed"
             },
             "match": {
@@ -311,7 +323,7 @@
           },
           {
             "result": {
-              "duration": 1998100,
+              "duration": 5023700,
               "status": "passed"
             },
             "match": {
@@ -320,7 +332,7 @@
           },
           {
             "result": {
-              "duration": 999600,
+              "duration": 2002900,
               "status": "passed"
             },
             "match": {
@@ -337,7 +349,7 @@
           },
           {
             "result": {
-              "duration": 998000,
+              "duration": 1009000,
               "status": "passed"
             },
             "match": {
@@ -345,14 +357,14 @@
             }
           }
         ],
-        "line": 20,
-        "name": "Verifikasi operasi tekan tombol \"Continue Shopping\" pada halaman keranjang",
+        "line": 21,
+        "name": "Verifikasi Halaman Dashboard ketika \"Back to Product\" ditekan",
         "description": "",
-        "id": "cart;verifikasi-operasi-tekan-tombol-\"continue-shopping\"-pada-halaman-keranjang",
+        "id": "product-detail;verifikasi-halaman-dashboard-ketika-\"back-to-product\"-ditekan",
         "after": [
           {
             "result": {
-              "duration": 613994800,
+              "duration": 584337300,
               "status": "passed"
             },
             "match": {
@@ -361,6 +373,7 @@
           },
           {
             "result": {
+              "duration": 1001900,
               "status": "passed"
             },
             "match": {
@@ -369,7 +382,7 @@
           },
           {
             "result": {
-              "duration": 1002300,
+              "duration": 998800,
               "status": "passed"
             },
             "match": {
@@ -382,10 +395,10 @@
         "steps": [
           {
             "result": {
-              "duration": 2759028500,
+              "duration": 2574120200,
               "status": "passed"
             },
-            "line": 21,
+            "line": 22,
             "name": "I have successfully logged in",
             "match": {
               "location": "com.tubes.websaucedemo.stepdefinition.MenuStepDefinitions.verifyLoggedInSuccessfully()"
@@ -394,46 +407,58 @@
           },
           {
             "result": {
-              "duration": 397515400,
+              "duration": 2705936200,
               "status": "passed"
             },
-            "line": 22,
+            "line": 23,
             "name": "I am on the dashboard page",
             "match": {
               "location": "com.tubes.websaucedemo.stepdefinition.DashboardStepDefinitions.goToDashboardPage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 147491700,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I click the product image",
+            "match": {
+              "location": "com.tubes.websaucedemo.stepdefinition.DetailStepDefinitions.clickGambarProduk()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 273942200,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "I am on the detail page",
+            "match": {
+              "location": "com.tubes.websaucedemo.stepdefinition.DetailStepDefinitions.productsDetail()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 112055200,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "I click the Back to Product button",
+            "match": {
+              "location": "com.tubes.websaucedemo.stepdefinition.DetailStepDefinitions.clickBack()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 140003400,
+              "duration": 621218100,
               "status": "passed"
             },
-            "line": 23,
-            "name": "I click the cart icon",
-            "match": {
-              "location": "com.tubes.websaucedemo.stepdefinition.CartStepDefinitions.i_click_the_cart_icon()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 185998000,
-              "status": "passed"
-            },
-            "line": 24,
-            "name": "I click the Continue Shopping button",
-            "match": {
-              "location": "com.tubes.websaucedemo.stepdefinition.CartStepDefinitions.i_click_the_continue_shopping_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 353000600,
-              "status": "passed"
-            },
-            "line": 25,
+            "line": 27,
             "name": "I am on the dashboard page",
             "match": {
               "location": "com.tubes.websaucedemo.stepdefinition.DashboardStepDefinitions.goToDashboardPage()"
@@ -443,22 +468,22 @@
         ],
         "tags": [
           {
-            "name": "@cart"
+            "name": "@detail"
           },
           {
-            "name": "@cart-positive"
+            "name": "@detail-positive"
           }
         ]
       }
     ],
-    "name": "Cart",
+    "name": "Product Detail",
     "description": "",
-    "id": "cart",
+    "id": "product-detail",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/websaucedemo/features/Cart.feature",
+    "uri": "file:src/test/resources/websaucedemo/features/Detail.feature",
     "tags": [
       {
-        "name": "@cart",
+        "name": "@detail",
         "type": "Tag",
         "location": {
           "line": 1,
