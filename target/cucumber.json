@@ -1,0 +1,154 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2024-06-02T07:00:14.844Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4043428900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.tubes.websaucedemo.stepdefinition.DashboardStepDefinitions.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 44000700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.tubes.websaucedemo.stepdefinition.DetailStepDefinitions.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 2001200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.tubes.websaucedemo.stepdefinition.LoginStepDefinitions.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 998700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.tubes.websaucedemo.stepdefinition.MenuStepDefinitions.setup()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "Verifikasi Halaman Detail Produk ketika Gambar Produk ditekan",
+        "description": "",
+        "id": "product-detail;verifikasi-halaman-detail-produk-ketika-gambar-produk-ditekan",
+        "after": [
+          {
+            "result": {
+              "duration": 1153243700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.tubes.websaucedemo.stepdefinition.MenuStepDefinitions.closeBrowser()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.tubes.websaucedemo.stepdefinition.LoginStepDefinitions.closeBrowser()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.tubes.websaucedemo.stepdefinition.DashboardStepDefinitions.closeBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6020988500,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I have successfully logged in",
+            "match": {
+              "location": "com.tubes.websaucedemo.stepdefinition.MenuStepDefinitions.verifyLoggedInSuccessfully()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 309073700,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I am on the dashboard page",
+            "match": {
+              "location": "com.tubes.websaucedemo.stepdefinition.DashboardStepDefinitions.goToDashboardPage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 175999200,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I click the product image",
+            "match": {
+              "location": "com.tubes.websaucedemo.stepdefinition.DetailStepDefinitions.clickGambarProduk()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 386996700,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I have to move to the product details page which displays product data",
+            "match": {
+              "location": "com.tubes.websaucedemo.stepdefinition.DetailStepDefinitions.productsDetail()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@detail"
+          },
+          {
+            "name": "@detail-positive"
+          }
+        ]
+      }
+    ],
+    "name": "Product Detail",
+    "description": "",
+    "id": "product-detail",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/websaucedemo/features/Detail.feature",
+    "tags": [
+      {
+        "name": "@detail",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
