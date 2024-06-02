@@ -7,7 +7,6 @@ import org.openqa.selenium.WebDriver;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import io.cucumber.java.Before;
-import io.cucumber.java.en.And;
 
 import static org.junit.Assert.assertTrue;
 
@@ -26,7 +25,7 @@ public class CartStepDefinitions {
         cart = new CartPage(driver); 
     }
 
-    @And("I click the cart icon")
+    @When("I click the cart icon")
     public void i_click_the_cart_icon() {
         cart.clickCartIcon();
     }
@@ -39,12 +38,12 @@ public class CartStepDefinitions {
 
     }
 
-    @And("I click the add to cart in product Sauce Labs Backpack button")
+    @When("I click the add to cart in product Sauce Labs Backpack button")
     public void i_click_the_add_to_cart_button(){
         cart.clickAddToCartButton();
     }
 
-    @Then("I see a cart page with items that contain Title page, List of items containing item name, item description, and price, Continue Shopping button, Checkout button")
+    @Then("I see a cart page with items that contain Title page, List of items containing item name, item description, and price, Continue Shopping button, Checkout button, Remove button")
     public void i_see_a_cart_page_with_items() {
         assertTrue(cart.isCartWithItemsDisplayed());
 

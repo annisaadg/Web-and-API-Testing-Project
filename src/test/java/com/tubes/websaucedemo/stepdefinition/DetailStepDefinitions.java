@@ -24,20 +24,20 @@ public class DetailStepDefinitions {
         detail = new DetailPage(driver); 
     }
 
-    @And("I click the product image")
+    @When("I click the product image")
     public void clickGambarProduk() {
         detail.clickGambar();
     }
 
     @Then("I have to move to the product details page which displays product data")
-    @When("I am on the detail page")
+    @And("I am on the detail page")
     public void productsDetail() {
         String currentUrl = driver.getCurrentUrl();
         assertTrue(currentUrl.contains(detailPage));
         assertTrue(detail.isDetailPageDisplayed());
     }
 
-    @And("I click the add to cart button")
+    @When("I click the add to cart button")
     public void clickTambahProduk() {
         detail.clickAddToCart();
     }
@@ -47,7 +47,7 @@ public class DetailStepDefinitions {
         assertTrue(detail.isDetailPageDisplayed2());
     }
 
-    @And("I click the Back to Product button")
+    @When("I click the Back to Product button")
     public void clickBack() {
         detail.clickBackToProduk();
     }

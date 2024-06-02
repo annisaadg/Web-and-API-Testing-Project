@@ -30,6 +30,9 @@ public class CartPage {
     @FindBy(css = "button[data-test='add-to-cart-sauce-labs-backpack']")
     private WebElement addToCartButton;
 
+    @FindBy(css = "button[data-test='remove-sauce-labs-backpack']")
+    private WebElement removeButton;
+
     @FindBy(css = "div[data-test='inventory-item-name']")
     private WebElement itemName;
 
@@ -59,6 +62,10 @@ public class CartPage {
         addToCartButton.click();
     }
 
+    public void clickRemoveButton() {
+        removeButton.click();
+    }
+
     public String getItemName() {
         return itemName.getText();
     }
@@ -79,6 +86,6 @@ public class CartPage {
     // Metode untuk memeriksa elemen pada halaman keranjang yang berisi barang
     public boolean isCartWithItemsDisplayed() {
         return title.isDisplayed() && continueShoppingButton.isDisplayed() && checkoutButton.isDisplayed() &&
-               itemName.isDisplayed() && itemDescription.isDisplayed() && itemPrice.isDisplayed();
+               itemName.isDisplayed() && itemDescription.isDisplayed() && itemPrice.isDisplayed() && removeButton.isDisplayed();
     }
 }

@@ -1,14 +1,12 @@
-# Web Automation Testing Menggunakan Cucumber dan Selenium
+# Testing Project: API & Web Automation Testing
 ## Deskripsi
-Program ini bertujuan untuk mengotomatisasi pengujian fitur login dan logout pada website Swag Labs (https://www.saucedemo.com/) menggunakan Cucumber dan Selenium. Dengan menggunakan pendekatan Behaviour Driven Development (BDD).
+Program ini bertujuan untuk menguji website Swag Labs (https://www.saucedemo.com/) dan API User Controller dari Dummy API (https://dummyapi.io/docs). Proyek ini dikembangkan menggunakan bahasa Java.
 
-## Tentang Project Web Automation Testing
+## Fitur / Method yang Diuji
+- **API TESTING:** Method DELETE, GET, POST, PUT
+- **WEB TESTING:** Halaman Login, Dashboard, Menu, Cart, Detail Product
 
-### Fitur
-- **Login:** Pengguna dapat mengakses akun mereka dengan memasukkan kredensial yang valid (username dan password). 
-- **Logout:** Pengguna dapat melakukan logout dari akun mereka dan kembali ke halaman login.
-
-### Build With
+## Build With
 Web automation testing pada project ini menggunakan:
 - Cucumber
 - Selenium
@@ -16,136 +14,173 @@ Web automation testing pada project ini menggunakan:
 - JUnit
 - Cucumber Reporting
 - Maven
-
-## Directory Tree Project
-```
-.
-├───.vscode
-├───src
-│   ├───main
-│   │   └───java
-│   │       └───com
-│   │           └───testswaglabs
-│   │               ├───pages
-│   │               └───utils
-│   └───test
-│       ├───java
-│       │   └───com
-│       │       └───testswaglabs
-│       │           ├───stepdefinition
-│       │           └───TestRunner
-│       └───resources
-└───target
-    ├───classes
-    │   └───com
-    │       └───testswaglabs
-    │           ├───pages
-    │           └───utils
-    ├───generated-sources
-    │   └───annotations
-    ├───generated-test-sources
-    │   └───test-annotations
-    ├───maven-status
-    │   └───maven-compiler-plugin
-    │       ├───compile
-    │       │   └───default-compile
-    │       └───testCompile
-    │           └───default-testCompile
-    ├───surefire-reports
-    └───test-classes
-        └───com
-            └───testswaglabs
-                ├───stepdefinition
-                └───TestRunner
-```
-### Penjelasan Directory Root Project
-1. **src:** Ini adalah direktori sumber (source) utama yang berisi kode sumber aplikasi.
-2. **main/java/com/testswaglabs/pages:** Ini adalah direktori untuk menyimpan kode yang menerapkan pola Page Object Model serta Page Factory yang berisi elemen-elemen halaman yang digunakan pada kode pengujian
-3. **main/java/com/testswaglabs/utils:** Ini adalah direktori untuk menyimpan kode untuk mengelola web driver
-4. **test/java/com/testswaglabs/stepdefinition:** Ini adalah direktori untuk menyimpan kode pengujian yang berisi untuk mengotomatiskan skenario pengujian
-5. **test/java/com/testswaglabs/TestRunner:** Ini adalah direktori untuk menyimpan kode yang digunakan untuk menjalankan skenario pengujian
-6. **test/resources:** Ini adalah direktori untuk menyimpan list feature (cucumber)
-7. **target:** Ini adalah direktori yang berisi hasil dari proses kompilasi dan pembuatan (build) lainnya.
-12. **classes/com/testswaglabs:** Direktori tempat hasil kompilasi dari kode sumber utama ditempatkan.
-13. **generated-sources:** Direktori untuk sumber yang dihasilkan, mungkin oleh proses generasi kode.
-14. **generated-test-sources:** Direktori untuk sumber pengujian yang dihasilkan.
-15. **maven-status/maven-compiler-plugin:** Direktori yang berisi informasi status proyek yang dihasilkan oleh Maven.
-17. **surefire-reports:** Direktori yang berisi laporan hasil pengujian yang dihasilkan oleh Surefire plugin.
-18. **pom.xml:** Ini adalah berkas POM (Project Object Model) Maven yang berisi konfigurasi proyek, dependensi, dan informasi lainnya yang diperlukan oleh Maven untuk membangun proyek.
-19. **test-report.html:** Ini adalah hasil generate report test yang sudah dijalankan
+- Rest Assured
 
 ## Prerequisites
 
 - **Java Development Kit (JDK)** versi 8
 - **Apache Maven** versi 3.6.0+
 - **IDE Visual Studio Code** dengan ekstensi Java atau Maven terbaru
-- **Browser** 
+- **Web Browser** 
 
-## Menjalankan Aplikasi
+## Directory Tree Project
+```
+├───reports
+├───src
+│   ├───main
+│   │   └───java
+│   │       └───com
+│   │           └───tubes
+│   └───test
+│       ├───java
+│       │   └───com
+│       │       └───tubes
+│       │           ├───dummyapi
+│       │           │   ├───helper
+│       │           │   ├───logic
+│       │           │   │   └───request
+│       │           │   ├───model
+│       │           │   ├───runner
+│       │           │   └───stepDef
+│       │           └───websaucedemo
+│       │               ├───pages
+│       │               ├───stepdefinition
+│       │               ├───TestRunner
+│       │               └───utils
+│       └───resources
+│           ├───dummyapi
+│           │   ├───data
+│           │   ├───features
+│           │   └───schema
+│           └───websaucedemo
+│               └───features
+└───target
+```
+### Penjelasan Struktur Project
+**src/test/resources/dummyapi**
+1. Folder data: Menyimpan data yang digunakan dalam pengujian API.
+2. Folder features: Menyimpan file fitur Cucumber yang mendefinisikan skenario pengujian untuk berbagai endpoint API.
+3. Folder schema: Menyimpan skema JSON yang digunakan untuk memvalidasi struktur respons API.
 
-Clone project ini
+**src/test/resources/websaucedemo**
+1. Fodler features:  Menyimpan file fitur Cucumber yang mendefinisikan skenario pengujian untuk aplikasi web.
+
+**src/test/java/com/tubes/dummyapi**
+1. Folder helper
+   - SetUpEndPoint.java: Berisi kelas atau metode yang digunakan untuk mengatur endpoint API yang akan digunakan dalam pengujian.
+2. Folder logic
+   - request/EndPoint.java: Berisi definisi endpoint API yang akan diakses.
+   - request/RequestAPIUserManagement.java: Berisi metode untuk membuat permintaan ke API terkait manajemen pengguna.
+   - APIRequestProcessor.java: Berisi logika untuk memproses permintaan API.
+   - APIUserTest.java: Berisi kelas atau metode yang digunakan untuk menguji fungsi API pengguna.
+3. Folder Model
+   - Location.java: Model kelas yang merepresentasikan data lokasi pengguna.
+   - UserProfile.java: Model kelas yang merepresentasikan data profil pengguna.
+5. Folder runner
+   - APITestRunner.java: Berisi kelas untuk menjalankan pengujian API menggunakan Cucumber.
+7. Folder stepDef
+   - Berisi definisi langkah-langkah (step definitions) Cucumber untuk pengujian API. Setiap file di sini mendefinisikan bagaimana setiap langkah dalam file fitur (feature file) harus dieksekusi.
+
+**src/test/java/com/tubes/websaucedemo**
+1. Foler pages
+   - CartPage.java: Berisi objek halaman (page object) untuk halaman keranjang (cart) dalam aplikasi web.
+   - DashboardPage.java: Berisi objek halaman untuk halaman dashboard dalam aplikasi web.
+   - DetailPage.java: Berisi objek halaman untuk halaman detail produk dalam aplikasi web.
+   - LoginPage.java: Berisi objek halaman untuk halaman login dalam aplikasi web.
+2. Folder stepdefinition
+   - CartStepDefinitions.java: Berisi definisi langkah-langkah Cucumber untuk pengujian halaman keranjang.
+   - DashboardStepDefinitions.java: Berisi definisi langkah-langkah Cucumber untuk pengujian halaman dashboard.
+   - DetailStepDefinitions.java: Berisi definisi langkah-langkah Cucumber untuk pengujian halaman detail.
+   - LoginStepDefinitions.java: Berisi definisi langkah-langkah Cucumber untuk pengujian halaman login.
+   - MenuStepDefinitions.java: Berisi definisi langkah-langkah Cucumber untuk pengujian menu navigasi.
+3. TestRunner.java: Berisi kelas untuk menjalankan pengujian web menggunakan Cucumber.
+4. Folder utils
+   - DriverManager.java: Berisi kelas atau metode untuk mengelola driver WebDriver yang digunakan untuk pengujian web.
+
+
+## Run Automation test
+
+1. Clone project ini
 
 ```bash
-  git clone https://github.com/suciawalia/Web-Automation-Testing.git
+  git clone [https://github.com/suciawalia/Web-Automation-Testing.git](https://github.com/annisaadg/Web-and-API-Testing-Project.git)
 ```
 
-## Menjalankan Tests
+2.  Jalankan perintah berikut untuk menginstall artifak yang didefinisikan
+```
+mvn clean install
+```
 
-Jalankan command ini untuk menjalankan test
+3. Jalankan command ini untuk menjalankan test web 
 
 ```bash
-   mvn test
+   mvn test -Pweb
 ```
+
+4. Jalankan command ini untuk menjalankan test API 
+
+```bash
+   mvn test -Papi
+```
+
 ## Generate Report by tools
 
-Dengan menambahkan "html:test-report.html" pada TestRunner.java
+Dengan menambahkan plugin "html:test-report.html" pada TestRunner.java
 
 ```bash
 @CucumberOptions(features="src/test/resources",
-        glue= {"com.testswaglabs.stepdefinition"},
+        glue= {},
         plugin ={"pretty","json:target/cucumber.json","html:test-report.html"}
         )
 ```
 ## Test Cases
-1. Login Menggunakan Username yang Terdaftar pada Sistem
-2. Login dengan Keadaan Username dan Password Tidak Diisi
-3. Login dengan Keadaan Username Tidak Diisi
-4. Login dengan Keadaan Password Tidak Diisi
-5. Login dengan Keadaan Username Tidak Terdaftar pada Sistem
-6. Login dengan Keadaan Username Terdaftar Pada Sistem namun Password Tidak Sesuai
-7. Logout dengan Menekan Tombol "Logout"
-
-## Hasil Tests
-### Root file test report
+### A. API Testing
+**POST**
 ```
-..\test-report.html
+1. Melakukan request create user ketika tidak ada app-id pada header.
+2. Melakukan request create user ketika memasukkan app-id yang invalid pada header.
+3. Melakukan request create user dengan mengisi hanya required field dimana field firstName dan lastName di dalam range yang valid dan field email diisi dengan format yang valid.
+4. Melakukan request create user dimana semua field diisi dengan nilai dalam range dan format yang valid.
+5. Melakukan request create user dengan mengisi hanya required field dengan field firstName kosong.
 ```
-### Hasil Test Report
-**1. Summary**
+**PUT**
+```
+```
+**GET**
+```
+```
+**DELETE**
+```
+```
 
-![image](https://github.com/suciawalia/Web-Automation-Testing/assets/99374578/ffb90a61-712f-4e1b-a302-c2b13dc58b8f)
-
-- Jumlah scenario yang dieksekusi dan menghasilkan fail (Failed) adalah 5
-- Jumlah scenario yang dieksekusi dan menghasilkan pass (Passed) adalah 2
-- Waktu untuk eksekusi testnya (Duration) adalah 1m 30.646s
-- Test yang dinjalankan mengguanakan dependency cucumber-JVM versi 6.9.0
-- Java Runtime Environment OpenJDK 64-Bit Server VM versi 25.382-b05.
-- Sistem operasi (Windows 11) dan arsitektur CPU (amd64)
-
-**2. Test Result Fitur Login**
-
-![image](https://github.com/suciawalia/Web-Automation-Testing/assets/99374578/10bf9216-1ecc-40c2-b64e-9e4038d98a7b)
-
-![image](https://github.com/suciawalia/Web-Automation-Testing/assets/99374578/be3abfb3-5d2e-4aab-ab3c-2bf593573fe6)
-
-Dari hasil eksekusi scenario untuk fitur login terdapat 5 scenario yang dieksekusi yaitu 
-- User successfully logs in with registered username and password dengan scenario status passed semua yang ditandai dengan icon ceklis bewarna hijau
-- User attempts to login without providing username and password dengan scenario status failed detailnya pada tahap expected result "Then" yang ditandai dengan icon x berwarna merah
-- User attempts to login without providing username dengan scenario status failed detailnya pada tahap expected result "Then" yang ditandai dengan icon x berwarna merah
-- User attempts to login without providing password dengan scenario status failed detailnya pada tahap expected result "Then" yang ditandai dengan icon x berwarna merah
-- Username isn't registered in the system dengan scenario status failed detailnya pada tahap expected result "Then" yang ditandai dengan icon x berwarna merah dan terdapat scenario status skipped pada tahap "And I should remain on the login page"
-- Password isn't registered in the system dengan scenario status failed detailnya pada tahap expected result "Then" yang ditandai dengan icon x berwarna merah
-
+### B. Web Testing
+**Login**
+```
+1. Login menggunakan username yang terdaftar pada sistem.
+2. Login dengan keadaan username dan password tidak diisi.
+3. Login dengan keadaan username tidak terdaftar pada sistem.
+```
+**Dashboard**
+```
+1. Verifikasi tampilan daftar barang.
+2. Verifikasi tampilan menuju halaman cart.
+3. Validasi Button "Add to Cart" berubah menjadi "Remove"
+```
+**Menu**
+```
+1. Verifikasi halaman menu.
+2. Verifikasi menu "About".
+3. Verifikasi menu "Logout".
+```
+**Cart**
+```
+```
+**Detail Product**
+```
+```
+**End to End Testing**
+```
+```
 
 ## Kelompok 7
 - 211524001 | Adinda Faayza Malika [@adindafaayza](https://github.com/adindafaayza)
