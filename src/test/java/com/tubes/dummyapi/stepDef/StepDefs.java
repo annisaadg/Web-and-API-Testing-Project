@@ -125,7 +125,7 @@ public class StepDefs {
     public void checkDataUserGetById() throws ParseException {
         apiUser.checkResponseBodyGetUser(this.userId);
     }
-
+    
     @Then("The response body should show the id of the deleted user")
     public void checkDeleteResponseBody() throws ParseException {
         apiUser.checkResponseBodyDeleteUser(this.userId);

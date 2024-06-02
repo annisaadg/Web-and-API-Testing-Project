@@ -11,7 +11,6 @@ com\tubes\dummyapi\runner\APITestRunner.class
 com\tubes\websaucedemo\utils\DriverManager.class
 com\tubes\websaucedemo\pages\DashboardPage.class
 com\tubes\websaucedemo\stepdefinition\LoginStepDefinitions.class
-com\tubes\dummyapi\stepDef\GetStepDefs.class
 com\tubes\dummyapi\stepDef\StepDefs.class
 com\tubes\websaucedemo\stepdefinition\MenuStepDefinitions.class
 com\tubes\websaucedemo\stepdefinition\DashboardStepDefinitions.class

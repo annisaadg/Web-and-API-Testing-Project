@@ -30,8 +30,9 @@ public class DashboardStepDefinitions {
         assertTrue(currentUrl.contains(dashboardPage));
     }
 
-    @Then("I should see a list of items with name, description, image, price, and an {string} button")
-    public void verifyItemsDisplayed(String buttonText) {
+    @Then("I should see the page title {string}, a list of items with name, description, image, price, and an {string} button")
+    public void verifyItemsDisplayed(String pageTitle, String buttonText) {
+        assertTrue(dashboard.isPageTitleCorrect(pageTitle));
         assertTrue(dashboard.isItemListDisplayed(buttonText));
     }
 
