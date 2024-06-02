@@ -1,0 +1,22 @@
+-------------------------------------------------------------------------------
+Test set: com.tubes.dummyapi.runner.APITestRunner
+-------------------------------------------------------------------------------
+Tests run: 20, Failures: 6, Errors: 0, Skipped: 0, Time elapsed: 14.381 s <<< FAILURE! - in com.tubes.dummyapi.runner.APITestRunner
+Test to delete existing user data with correct app-id in header(DELETE)  Time elapsed: 4.739 s  <<< FAILURE!
+java.lang.AssertionError: expected:<200> but was:<404>
+
+Test to get existing user data with correct app-id in header(GET)  Time elapsed: 0.249 s  <<< FAILURE!
+java.lang.AssertionError: expected:<200> but was:<404>
+
+Test to get existing user data without app-id in header(GET)  Time elapsed: 0.186 s  <<< FAILURE!
+java.lang.AssertionError: expected:<403> but was:<404>
+
+Test to get existing user data with incorrect app-id in header(GET)  Time elapsed: 0.169 s  <<< FAILURE!
+java.lang.AssertionError: expected:<403> but was:<404>
+
+Test creating a new user with full fields(POST)  Time elapsed: 0.957 s  <<< FAILURE!
+java.lang.AssertionError: expected:<200> but was:<400>
+
+Test creating a new user with only required fields(POST)  Time elapsed: 0.393 s  <<< FAILURE!
+java.lang.AssertionError: expected:<200> but was:<400>
+
