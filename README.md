@@ -1,4 +1,4 @@
-# Web Automation Testing Menggunakan Cucumber dan Selenium
+# Testing Project: API & Web Automation Testing
 ## Deskripsi
 Program ini bertujuan untuk menguji website Swag Labs (https://www.saucedemo.com/) dan API User Controller dari Dummy API (https://dummyapi.io/docs). Proyek ini dikembangkan menggunakan bahasa Java.
 
