@@ -6,6 +6,7 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
+        tags = "@get-positive",
         glue = {"com.tubes.dummyapi.stepDef"},
         features = {"src/test/resources/dummyapi/features"},
         plugin = {

@@ -24,6 +24,8 @@ public class StepDefs {
     JSONObject bodyReq;
     Preferences prefs = Preferences.userNodeForPackage(StepDefs.class);
 
+    private String userId;
+
     public StepDefs() {  // Corrected the constructor name
         apiUser = new APIUserTest();
     }
@@ -70,13 +72,31 @@ public class StepDefs {
         } 
     }
 
+    @When("I send a GET request with the user id {string}")
+    public void sendGetUserDataByIdRequest(String userId) {
+        this.userId = userId;
+        apiUser.hitAPIGetUser(userId);
+        if (apiUser.getRes() == null) {
+            System.out.println("Error: Null response received.");
+        } 
+    }
+
+    @When("I send a DELETE request with the user id {string}")
+    public void sendDeleteUserDataByIdRequest(String userId) {
+        this.userId = userId;
+        apiUser.hitAPIDeleteUser(userId);
+        if (apiUser.getRes() == null) {
+            System.out.println("Error: Null response received.");
+        } 
+    }
+
     @Then("The API response status code should be {int}")
     public void validation_status_code_is_equals(Integer statusCode) {
         APIRequestProcessor.validationStatusCode(apiUser.getRes(), statusCode);
     }
 
     @Then("The response body should match the expected user creation schema with {string} field data")
-    public void validationResponseBodyPostCreateNewUser(String dataType) throws ParseException {
+    public void validationResponseBody(String dataType) throws ParseException {
         switch (dataType) {
             case "full":
                 apiUser.checkResponseBodyCreateUser(dataTestCreateUser);
@@ -100,4 +120,16 @@ public class StepDefs {
     public void The_response_body_should_contain(String errorType) {
         apiUser.checkResponseBodyCreateUserFailed(errorType);
     }
+
+    @Then("The response body should show the full data of the user")
+    public void checkDataUserGetById() throws ParseException {
+        apiUser.checkResponseBodyGetUser(this.userId);
+    }
+
+    @Then("The response body should show the id of the deleted user")
+    public void checkDeleteResponseBody() throws ParseException {
+        apiUser.checkResponseBodyDeleteUser(this.userId);
+    }
+
+
 }

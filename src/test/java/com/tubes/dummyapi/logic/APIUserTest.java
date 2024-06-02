@@ -33,6 +33,20 @@ public class APIUserTest {
         return res.getBody().jsonPath().get("id");
     }
 
+    public String hitAPIGetUser(String userId) {
+        res = RequestAPIUserManagement.getUserById(SetUpEndPoint.getURL(), userId); //call API Get User by Id
+        System.out.println(res.getBody().asString()); // logging response API
+
+        return res.getBody().jsonPath().get("id");
+    }
+
+    public String hitAPIDeleteUser(String userId) {
+        res = RequestAPIUserManagement.deleteUserById(SetUpEndPoint.getURL(), userId); //call API Get User by Id
+        System.out.println(res.getBody().asString()); // logging response API
+
+        return res.getBody().jsonPath().get("id");
+    }
+
     public void checkResponseBodyCreateUserFailed(String expectedMessage) {
         System.out.println("validation response body profile user process failed");
         JSONObject notification = new JSONObject(res.getBody().asString()); // get data json in object
@@ -122,6 +136,59 @@ public class APIUserTest {
         // Membandingkan tanggal register dan updated dengan tanggal hari ini
         Assert.assertEquals(currentDateStr, sdfDate.format(sdfTime.parse(actualData.getRegisterDate())));
         Assert.assertEquals(currentDateStr, sdfDate.format(sdfTime.parse(actualData.getUpdatedDate())));
+    }
+
+    public void checkResponseBodyGetUser(String userId) throws ParseException {
+        System.out.println("test logic for check response body get user");
+        
+        // Inisialisasi Gson
+        Gson json = new Gson();
+        
+        // Mendapatkan data aktual dari respons HTTP dan mengonversinya menjadi objek UserProfile
+        UserProfile actualData = json.fromJson(res.getBody().asString(), UserProfile.class);
+        
+        // Mencetak data aktual dan data pengujian
+        System.out.print("Actual Data : ");
+        System.out.println(json.toJson(actualData));
+        System.out.print("Test Data User Id : ");
+        System.out.println(userId);
+        
+        // Memerika setiap atribut data aktual ditampilkan
+        Assert.assertEquals(actualData.getId(), userId);
+        Assert.assertNotNull(actualData.getTitle());
+        Assert.assertNotNull(actualData.getFirstName());
+        Assert.assertNotNull(actualData.getLastName());
+        Assert.assertNotNull(actualData.getPicture());
+        Assert.assertNotNull(actualData.getGender());
+        Assert.assertNotNull(actualData.getEmail());
+        Assert.assertNotNull(actualData.getDateOfBirth());
+        Assert.assertNotNull(actualData.getPhone());
+        Assert.assertNotNull(actualData.getLocation().getStreet());
+        Assert.assertNotNull(actualData.getLocation().getCity());
+        Assert.assertNotNull(actualData.getLocation().getState());
+        Assert.assertNotNull(actualData.getLocation().getCountry());
+        Assert.assertNotNull(actualData.getLocation().getTimezone());
+        Assert.assertNotNull(actualData.getRegisterDate());
+        Assert.assertNotNull(actualData.getUpdatedDate());
+    }
+
+    public void checkResponseBodyDeleteUser(String userId) {
+       
+        // Inisialisasi Gson
+        Gson json = new Gson();
+        
+        // Mendapatkan data aktual dari respons HTTP dan mengonversinya menjadi objek UserProfile
+        UserProfile actualData = json.fromJson(res.getBody().asString(), UserProfile.class);
+        
+        // Mencetak data aktual dan data pengujian
+        System.out.print("Actual Data : ");
+        System.out.println(json.toJson(actualData));
+        System.out.print("Test Data User Id : ");
+        System.out.println(userId);
+
+        // Memerika id pada response body
+        Assert.assertEquals(actualData.getId(), userId);
+
     }
 
  }

@@ -23,4 +23,13 @@ public class RequestAPIUserManagement {
         return request.body(payload.toJson(dataUser)).when().post(endpoint); // call API create user
     }
 
+    public static Response getUserById(String endpoint, String userIdParams) {
+        return request.get(endpoint + userIdParams);
+    }
+
+    public static Response deleteUserById(String endpoint, String userIdParams) {
+        return request.delete(endpoint + userIdParams);
+    }
+
+
 }
