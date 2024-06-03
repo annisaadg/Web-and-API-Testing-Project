@@ -145,12 +145,27 @@ Dengan menambahkan plugin "html:test-report.html" pada TestRunner.java
 ```
 **PUT**
 ```
+1. Melakukan request update user ketika tidak ada app-id pada header
+2. Melakukan request update user ketika app-id pada header ada namun nilainya salah
+3. Melakukan update user dengan parameter id tidak sesuai
+4. Melakukan update user dengan parameter id tidak diisi
+5. Melakukan update user pada field title diisi "mr"
 ```
 **GET**
 ```
+1. Melakukan request get user yang terdaftar di sistem ketika memasukkan app-id yang valid pada header.
+2. Melakukan request get user yang terdaftar di sistem ketika tidak memasukkan app-id pada header.
+3. Melakukan request get user yang terdaftar di sistem ketika memasukkan app-id yang invalid pada header.
+4. Melakukan request get user yang tidak terdaftar di sistem ketika memasukkan app-id yang valid pada header.
+5. Melakukan request get user dengan format id yang invalid ketika memasukkan app-id yang valid pada header.
 ```
 **DELETE**
 ```
+1. Melakukan request delete user yang terdaftar di sistem ketika memasukkan app-id yang valid pada header.
+2. Melakukan request delete user yang terdaftar di sistem ketika tidak memasukkan app-id pada header.
+3. Melakukan request delete user yang terdaftar di sistem ketika memasukkan app-id yang invalid pada header.
+4. Melakukan request delete user yang tidak terdaftar di sistem ketika memasukkan app-id yang valid pada header.
+5. Melakukan request delete user dengan format id yang invalid ketika memasukkan app-id yang valid pada header.
 ```
 
 ### B. Web Testing
@@ -172,14 +187,27 @@ Dengan menambahkan plugin "html:test-report.html" pada TestRunner.java
 2. Verifikasi menu "About".
 3. Verifikasi menu "Logout".
 ```
+**Checkout**
+```
+1. Melanjutkan proses checkout dengan Field First Name, Last Name dan Zip/Postal Code sudah terisi
+2. Menyelesaikan proses checkout pada halaman checkout overview 
+3. Melanjutkan belanja setelah checkout complete 
+```
 **Cart**
 ```
+1. Verifikasi halaman keranjang kosong
+2. Verifikasi halaman keranjang berisi barang
+3. Verifikasi operasi tekan tombol "Continue Shopping" pada halaman keranjang
 ```
 **Detail Product**
 ```
+1. Verifikasi halaman detail produk
+2. Menambahkan produk ke cart
+3. Verifikasi navigasi tombol "Back to Product"
 ```
 **End to End Testing**
 ```
+1. Melakukan proses pemesanan mulai dari login sampai checkout berhasil
 ```
 
 ## Kelompok 7
