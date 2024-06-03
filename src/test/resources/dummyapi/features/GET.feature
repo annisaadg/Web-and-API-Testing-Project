@@ -1,8 +1,7 @@
-@get
 Feature: GET
 
   @get-positive
-  Scenario: Test to get existing user data with correct app-id in header
+  Scenario: Test to get existing user data with valid app-id in header
     Given I set up the URL for "get user by id"
     And I prepare the app-id "662ca6cad9ec7557d41a378a"
     When I send a GET request with the user id "60d0fe4f5311236168a109fa"
@@ -18,7 +17,7 @@ Feature: GET
     And The response body should contain error "APP_ID_MISSING"
 
   @get-negative
-  Scenario: Test to get existing user data with incorrect app-id in header
+  Scenario: Test to get existing user data with invalid app-id in header
     Given I set up the URL for "get user by id"
     And I prepare the app-id "662ca6cad9ec7557d41a378"
     When I send a GET request with the user id "60d0fe4f5311236168a109fa"
@@ -26,7 +25,7 @@ Feature: GET
     And The response body should contain error "APP_ID_NOT_EXIST"
 
   @get-negative
-  Scenario: Test to get non-existing user data with correct app-id in header
+  Scenario: Test to get non-existing user data with valid app-id in header
     Given I set up the URL for "get user by id"
     And I prepare the app-id "662ca6cad9ec7557d41a378a"
     When I send a GET request with the user id "60d0fe4f5311236168a109c1"
@@ -34,7 +33,7 @@ Feature: GET
     And The response body should contain error "RESOURCE_NOT_FOUND"
   
   @get-negative
-  Scenario: Test to get data by passing invalid user id format as parameter with correct app-id in header
+  Scenario: Test to get data by passing invalid user id format as parameter with valid app-id in header
     Given I set up the URL for "get user by id"
     And I prepare the app-id "662ca6cad9ec7557d41a378a"
     When I send a GET request with the user id "60d0fe4f5311236168a109c"

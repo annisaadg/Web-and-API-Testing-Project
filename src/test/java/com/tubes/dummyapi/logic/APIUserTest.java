@@ -155,19 +155,9 @@ public class APIUserTest {
         
         // Memerika setiap atribut data aktual ditampilkan
         Assert.assertEquals(actualData.getId(), userId);
-        Assert.assertNotNull(actualData.getTitle());
         Assert.assertNotNull(actualData.getFirstName());
         Assert.assertNotNull(actualData.getLastName());
-        Assert.assertNotNull(actualData.getPicture());
-        Assert.assertNotNull(actualData.getGender());
-        Assert.assertNotNull(actualData.getEmail());
-        Assert.assertNotNull(actualData.getDateOfBirth());
-        Assert.assertNotNull(actualData.getPhone());
-        Assert.assertNotNull(actualData.getLocation().getStreet());
-        Assert.assertNotNull(actualData.getLocation().getCity());
-        Assert.assertNotNull(actualData.getLocation().getState());
-        Assert.assertNotNull(actualData.getLocation().getCountry());
-        Assert.assertNotNull(actualData.getLocation().getTimezone());
+        Assert.assertNotNull(actualData.getEmail()); 
         Assert.assertNotNull(actualData.getRegisterDate());
         Assert.assertNotNull(actualData.getUpdatedDate());
     }

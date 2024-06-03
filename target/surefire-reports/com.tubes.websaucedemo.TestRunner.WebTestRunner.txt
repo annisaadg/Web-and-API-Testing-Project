@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: com.tubes.websaucedemo.TestRunner.WebTestRunner
+-------------------------------------------------------------------------------
+Tests run: 19, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 144.983 s <<< FAILURE! - in com.tubes.websaucedemo.TestRunner.WebTestRunner
+User attempts to login without providing username and password(User Login)  Time elapsed: 4.785 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[You need Username & Password!]> but was:<[Epic sadface: Username is required]>
+
+Username isn't registered in the system(User Login)  Time elapsed: 4.36 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[Username and password do not match any user in this service !]> but was:<[Epic sadface: Username and password do not match any user in this service]>
+
