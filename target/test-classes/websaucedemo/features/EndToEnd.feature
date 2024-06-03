@@ -2,7 +2,7 @@
 Feature: End to End
 
   @endtoend-positive
-  Scenario: Melanjutkan proses checkout dengan Field First Name, Last Name dan Zip/Postal Code sudah terisi
+  Scenario: Melakukan proses pemesanan mulai dari login sampai checkout berhasil
     Given I am on the login page
     When I fill in the username "standard_user"
     And I fill in the password "secret_sauce"
